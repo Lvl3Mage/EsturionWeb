@@ -1,0 +1,12 @@
+.def-slider{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-width: 0;
+	.slick-list {
+		flex: 100% 0 0;
+		order: 0;
+	}
+}

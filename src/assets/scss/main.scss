@@ -1,0 +1,25 @@
+@use 'sass:math';
+@import '../../../node_modules/modern-normalize/modern-normalize.css';
+// @import './utils/mixins';
+
+@import './presets/fonts';
+@import './presets/vars';
+@import './presets/def-presets';
+
+
+//Libraries
+@import './libs/ibg'; // Also include in JS
+@import './libs/modal'; // Also include in JS
+@import './libs/slick-stylize';
+
+@import './presets/fonts';
+@import './utils/def-slider';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+}
