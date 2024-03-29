@@ -23,3 +23,10 @@ $(document).on("click","[data-click-selectable]", function(){
 	}
 	$(this).addClass(cssClass);
 });
+$(document).on("click",".burger", function(){
+	$("#mob-menu").toggleClass('active');
+	$(this).toggleClass('active');
+	let state = !($("body").attr("locked") === 'true');
+	$("body").attr("locked", state);
+	$("body").css("overflow", state ? "hidden": "auto");
+});
