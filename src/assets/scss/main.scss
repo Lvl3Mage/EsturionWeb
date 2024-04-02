@@ -28,66 +28,96 @@
 	.hover-pulse{
 		@apply hover:drop-shadow ease-in-out duration-300 hover:scale-[0.95] transition;
 	}
-	.scrollbar-x-xs{
+	.scrollbar{
 		&::-webkit-scrollbar {
-			height: 3px;
+			width: 8px;
 		}
 
 		/* Track */
 		&::-webkit-scrollbar-track {
-			background-color: #ddd;
+			background-color: #fff;
 		}
 
-		/* Handle */
-		&::-webkit-scrollbar-thumb {
-			background-color: #888;
-			border-radius: 3px;
-		}
 
 		/* Handle on hover */
 		&::-webkit-scrollbar-thumb:hover {
 			cursor: pointer;
-			/*redifine styles like background and border radius*/
-		}
-	}
-	.scrollbar-y-xs{
-		&::-webkit-scrollbar {
-			height: 3px;
-		}
 
-		/* Track */
-		&::-webkit-scrollbar-track {
-			background-color: #ddd;
+			background-color: #a08571;
 		}
-
-		/* Handle */
 		&::-webkit-scrollbar-thumb {
-			background-color: #888;
+			background-color: #D3B096;
+			background-clip: padding-box; 
+			border: 2px solid #fff;
 			border-radius: 3px;
 		}
-
-		/* Handle on hover */
-		&::-webkit-scrollbar-thumb:hover {
-			cursor: pointer;
-			/*redifine styles like background and border radius*/
-		}
 	}
+	// .scrollbar-x-xs{
+	// 	&::-webkit-scrollbar {
+	// 		height: 3px;
+	// 	}
+
+	// 	/* Track */
+	// 	&::-webkit-scrollbar-track {
+	// 		background-color: #ddd;
+	// 	}
+
+	// 	/* Handle */
+	// 	&::-webkit-scrollbar-thumb {
+	// 		background-color: #888;
+	// 		border-radius: 3px;
+	// 	}
+
+	// 	/* Handle on hover */
+	// 	&::-webkit-scrollbar-thumb:hover {
+	// 		cursor: pointer;
+	// 		/*redifine styles like background and border radius*/
+	// 	}
+	// }
+	// .scrollbar-y-xs{
+	// 	&::-webkit-scrollbar {
+	// 		height: 3px;
+	// 	}
+
+	// 	/* Track */
+	// 	&::-webkit-scrollbar-track {
+	// 		background-color: #ddd;
+	// 	}
+
+	// 	/* Handle */
+	// 	&::-webkit-scrollbar-thumb {
+	// 		background-color: #888;
+	// 		border-radius: 3px;
+	// 	}
+
+	// 	/* Handle on hover */
+	// 	&::-webkit-scrollbar-thumb:hover {
+	// 		cursor: pointer;
+	// 		/*redifine styles like background and border radius*/
+	// 	}
+	// }
 	.card {
 		@apply bg-white rounded-2xl overflow-hidden;
 		@apply flex flex-col;
 		figure{
 			@apply flex items-center justify-center;
+			@apply min-w-0 min-h-0;
 			img{
-				@apply w-full h-full object-cover;
+				@apply w-full h-full object-cover object-center;
 			}
 		}
 	}
+
 	.card-body {
-		@apply p-8;
-		@appty flex flex-col gap-2 flex-auto;
+		@apply p-8 md:p-5;
 	}
 	.card-side {
 		@apply flex-row;
+	}
+	.card-wide{
+		.card-body{
+			@apply p-12 md:p-5;
+		}
 	}
 	.btn{
 		@apply p-4 rounded-full border-2 border-gold text-center font-roman text-xl font-bold;
@@ -95,10 +125,79 @@
 		@apply hover:bg-gold hover:text-white transition cursor-pointer;
 		@apply active:shadow-inner-md;
 	}
-	span.btn, a.btn{
+	span.btn:not(.block), a.btn:not(.block){
 		@apply inline-block;
 	}
 
+	.dropdown-radio-menu{
+		ul .ui-menu-item div{
+			@apply relative;
+			padding-left: 40px !important;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 10px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 22px;
+				height: 22px;
+				@apply border border-gold rounded-full bg-white;
+			}
+			&:after{
+				content: '';
+				@apply z-10 absolute;
+
+				left: calc(10px + (22px - 6px) / 2);
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				@apply bg-gold transition h-1.5 w-1.5 rounded-full scale-0;
+			}
+			&.ui-state-active:after{
+				@apply scale-100;
+			}
+		}
+		ul:before{
+			content: '';
+			width: 1px;
+			position: absolute;
+			height: 100%;
+			background: #D3B096;
+			padding: 25px 0;
+			left: calc(20px);
+			top: 0;
+			bottom: 0;
+			z-index: 0;
+			background-clip: content-box;
+		}
+	}
+	.dropdown-menu-gold{
+		ul{
+			@apply bg-white rounded-lg shadow-lg border border-gold;
+		}
+		& .ui-menu-item.ui-state-disabled .ui-menu-item-wrapper {
+			@apply text-neutral-400;
+		}
+		& .ui-menu-item:not(.ui-state-disabled) .ui-menu-item-wrapper:hover, .dropdown-menu .ui-menu-item:not(.ui-state-disabled) .ui-state-active {
+			@apply text-gold;
+		}
+	}
+	.dropdown-menu{
+		@apply opacity-0 pointer-events-none transition z-20 top-0;
+		ul{
+			@apply -translate-y-5 transition  relative;
+			.ui-menu-item div{
+				@apply p-3 relative overflow-hidden cursor-pointer transition;
+			}
+		}
+		&.ui-selectmenu-open{
+			@apply w-auto pt-2 pointer-events-auto opacity-100 translate-y-0;
+			ul{
+				@apply translate-y-0;
+			}
+		}
+	}
 }
 .banner-mask{
 	mask: url(../images/banner-mask.svg) exclude;

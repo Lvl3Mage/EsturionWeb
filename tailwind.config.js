@@ -11,10 +11,11 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
-        sm: '639px',
-        md: '767px',
-        lg: '1023px',
-        xl: '1279px',
+        'sm': '639px',
+        'md': '767px',
+        'lg': '1023px',
+        'xl': '1279px',
+        '2xl': '1535px',
       },
     },
     extend: {
@@ -38,18 +39,20 @@ module.exports = {
         // }
       },
       aspectRatio: {
-        // '3/2': '3 / 2',
+        'portrait': '2 / 3',
+        'landscape': '3 / 2',
       },
       animation: {
         'spin-slow': 'spin 25s linear infinite',
       },
     },
     screens: {
-      xl: { max: "1279px" },
-      lg: { max: "1023px" },
-      md: { max: "767px" },
-      sm: { max: "639px" },
-      xsm: { max: "480px" },
+      '2xl': { max: "1535px" },
+      'xl': { max: "1279px" },
+      'lg': { max: "1023px" },
+      'md': { max: "767px" },
+      'sm': { max: "639px" },
+      'xsm': { max: "480px" },
     },
   },
   plugins: [],
