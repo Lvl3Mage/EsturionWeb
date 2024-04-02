@@ -1,5 +1,5 @@
 # Tailwind webpack preset
-A tailwinf webpack preset used to quickly set up a tailwind dev environment from a template
+A tailwind webpack preset used to quickly set up a tailwind dev environment from a template
 
 Development Server
 ```
