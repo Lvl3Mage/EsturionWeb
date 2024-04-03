@@ -22,6 +22,7 @@
 @layer base{
 	body{
 		@apply text-blue font-montserrat;
+		@apply bg-linen;
 	}
 }
 @layer components{
@@ -111,22 +112,26 @@
 	.card-body {
 		@apply p-8 md:p-5;
 	}
-	.card-side {
-		@apply flex-row;
-	}
 	.card-wide{
 		.card-body{
 			@apply p-12 md:p-5;
 		}
 	}
+	.card-compact{
+		.card-body{
+			@apply p-4 md:p-4;
+		}
+	}
+	.card-side {
+		@apply flex-row;
+	}
+
+
 	.btn{
 		@apply p-4 rounded-full border-2 border-gold text-center font-roman text-xl font-bold;
 		@apply md:p-2 md:text-lg;
 		@apply hover:bg-gold hover:text-white transition cursor-pointer;
 		@apply active:shadow-inner-md;
-	}
-	span.btn:not(.block), a.btn:not(.block){
-		@apply inline-block;
 	}
 
 	.dropdown-radio-menu{

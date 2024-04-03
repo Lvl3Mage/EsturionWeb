@@ -98,6 +98,8 @@ $(document).on("mousemove", function(e){
 	}
 });
 
+window.InitializeDropdowns = InitializeDropdowns;
+window.InitializeSliders = InitializeSliders;
 $(document).ready(function(){
 	InitializeDropdowns();
 	InitializeSliders();
@@ -178,6 +180,25 @@ function InitializeSliders(){
 				},
 			]
 		});
+	});
+	$(".cart-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		focusOnSelect: true,
+		dots: true,
+		dotsClass: 'absolute top-full right-0 left-0 h-8 *:py-3 flex flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
+		customPaging : function(slider, i) {
+			return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
+		},
+		arrows: false,
+    	mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: "unslick",
+			},
+		]
 	});
 	
 }

@@ -20,10 +20,15 @@ module.exports = {
     },
     extend: {
       transitionTimingFunction: {
-        'out-wobble': 'cubic-bezier(.65,1.77,.73,.86)',
+        'out-wobble': `cubic-bezier(.65,1.77,.73,.86)`,
+        'bounce': `linear(0, 0.004, 0.016 4.6%, 0.063, 0.141, 0.25, 0.391, 0.563, 0.765, 1, 0.891, 0.813, 0.766 50%, 0.754, 0.75, 0.754, 0.766 59.1%, 0.813, 0.891, 1, 0.953 77.3%, 0.941, 0.938, 0.941, 0.953 86.4%, 1 90.9%, 0.988, 0.984, 0.988, 1)`,
       },
       boxShadow: {
         'inner-md': 'inset 0px 0px 15px 3px rgba(0,0,0,0.1)',
+        'lg': '0 4px 14px 0 rgba(0,0,0,0.1)',
+      },
+      dropShadow: {
+        'lg': '0 4px 14px rgba(0,0,0,0.1)',
       },
       colors: {
         'blue': {
@@ -31,6 +36,9 @@ module.exports = {
         },
         'gold': {
           DEFAULT: "#D3B096",
+        },
+        'linen': {
+          DEFAULT: "#f7f7f7",
         },
         // 'color': {
         //   DEFAULT:"#FFF",
