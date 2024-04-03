@@ -168,7 +168,7 @@
 					before:absolute before:h-0.5 before:w-8 before:rounded before:top-0 before:bottom-0 before:m-auto before:bg-gray-100 before:right-full before:mr-4 -->	
 <div class="container my-3">
 	<div class="flex gap-10 lg:flex-wrap items-start">
-		<div class="sticky -top-16 lg:static card card-wide shadow-2xl bg-white basis-[600px] shrink-0 lg:basis-full lg:m-auto max-w-[600px]">
+		<div class="sticky -top-16 lg:static card card-wide shadow-lg bg-white basis-[600px] shrink-0 lg:basis-full lg:m-auto max-w-[600px]">
 			<div class="card-body min-w-0">
 				<div class="product-slider flex lg:flex-col-reverse gap-10 items-stretch min-w-0 mb-10">
 					<div class="product-nav-slider leading-[0] basis-[90px] lg:basis-auto shrink-0 flex flex-col lg:flex-row justify-between relative ml-12 lg:ml-0 lg:mb-12 min-w-0">
@@ -201,7 +201,7 @@
 					<div class="product-main-slider grow min-w-0">
 						<div class="w-full px-1">
 							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom">
+								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
 									<img src="assets/fonts/zoom.svg" class="w-full" alt="" data-zoom-button>
 								</div>
 								<img src="assets/img/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
@@ -215,7 +215,7 @@
 						</div>
 						<div class="w-full px-1">
 							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom">
+								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
 									<img src="assets/fonts/zoom.svg" class="w-full" alt="" data-zoom-button>
 								</div>
 								<img src="assets/img/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
@@ -229,7 +229,7 @@
 						</div>
 						<div class="w-full px-1">
 							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom">
+								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
 									<img src="assets/fonts/zoom.svg" class="w-full" alt="" data-zoom-button>
 								</div>
 								<img src="assets/img/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
@@ -243,7 +243,7 @@
 						</div>
 						<div class="w-full px-1">
 							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom">
+								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
 									<img src="assets/fonts/zoom.svg" class="w-full" alt="" data-zoom-button>
 								</div>
 								<img src="assets/img/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
@@ -257,7 +257,7 @@
 						</div>
 						<div class="w-full px-1">
 							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom">
+								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
 									<img src="assets/fonts/zoom.svg" class="w-full" alt="" data-zoom-button>
 								</div>
 								<img src="assets/img/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
@@ -334,9 +334,9 @@
 			</div>
 
 
-			<a class="flex items-center mb-5">
-				<i class="fa-regular fa-heart text-gold text-3xl"></i>
-				<span class="font-medium ml-3 text-xl ">положить в избранное</span>
+			<a class="flex items-center mb-5 group/fav">
+				<i class="fa-regular fa-heart text-gold text-3xl group-hover/fav:scale-125  duration-300 ease-bounce"></i>
+				<span class="font-medium ml-3 text-xl group-hover/fav:translate-x-1 duration-300 ease-bounce">положить в избранное</span>
 			</a>
 
 
@@ -375,32 +375,32 @@
 					Пищевая ценность (на 100 грамм продукта):
 				</h2>
 				<div class="flex flex-wrap gap-8">
-					<div class="p-4 lg:p-3 shadow-2xl bg-white rounded-xl">
-						<div class="flex flex-col gap-2 items-center">
-							<div class="text-xs bold px-3 font-bold">Белки</div>
-							<div class="w-full border-b border-gold"></div>
-							<div class="text-sm font-medium px-3">28,4 г</div>
+					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+						<div class="flex flex-col gap-2 items-center ">
+							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
+							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
+							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-2xl bg-white rounded-xl">
-						<div class="flex flex-col gap-2 items-center">
-							<div class="text-xs bold px-3 font-bold">Белки</div>
-							<div class="w-full border-b border-gold"></div>
-							<div class="text-sm font-medium px-3">28,4 г</div>
+					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+						<div class="flex flex-col gap-2 items-center ">
+							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
+							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
+							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-2xl bg-white rounded-xl">
-						<div class="flex flex-col gap-2 items-center">
-							<div class="text-xs bold px-3 font-bold">Белки</div>
-							<div class="w-full border-b border-gold"></div>
-							<div class="text-sm font-medium px-3">28,4 г</div>
+					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+						<div class="flex flex-col gap-2 items-center ">
+							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
+							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
+							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-2xl bg-white rounded-xl">
-						<div class="flex flex-col gap-2 items-center">
-							<div class="text-xs bold px-3 font-bold">Белки</div>
-							<div class="w-full border-b border-gold"></div>
-							<div class="text-sm font-medium px-3">28,4 г</div>
+					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+						<div class="flex flex-col gap-2 items-center ">
+							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
+							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
+							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
 				</div>
@@ -411,9 +411,9 @@
 				<h2 class="font-roman text-2xl font-bold uppercase mb-5">
 					Очень нежный вкус с неповторимое послевкусие
 				</h2>
-				<div class="flex gap-8 items-start flex-wrap">
-					<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape rounded-3xl overflow-hidden leading-[0]">
-						<img src="assets/img/product2.png" alt="" class="w-full h-full object-cover object-center">
+				<div class="">
+					<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape leading-[0] inline float-left pr-8 pb-4">
+						<img src="assets/img/product2.png" alt="" class="w-full h-full object-cover object-center rounded-3xl">
 					</div>
 					<div class="md:basis-full basis-0 grow">
 						Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
@@ -430,11 +430,13 @@
 					<div class="basis-full">
 						Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
 					</div>
-					<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape rounded-3xl overflow-hidden leading-[0]">
-						<img src="assets/img/product2.png" alt="" class="w-full h-full object-cover object-center">
-					</div>
-					<div class="md:basis-full basis-0 grow">
-						Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
+					<div class="">
+						<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape leading-[0] inline float-left pr-8 pb-4">
+							<img src="assets/img/product2.png" alt="" class="w-full h-full object-cover object-center rounded-3xl">
+						</div>
+						<div class="md:basis-full basis-0 grow">
+							Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
+						</div>
 					</div>
 				</div>
 			</div>
