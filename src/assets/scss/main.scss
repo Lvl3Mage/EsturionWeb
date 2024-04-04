@@ -16,9 +16,6 @@
 @import './utils/def-slider';
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @layer base{
 	body{
 		@apply text-blue font-montserrat;
@@ -203,8 +200,28 @@
 			}
 		}
 	}
+	.form-input{
+		@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5;
+		@apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
+		@apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
+		@apply group-has-[:invalid]/input:outline-red-500 group-has-[:invalid]/input:outline-1 group-has-[:invalid]/input:outline;
+	}
+	.status-dot{
+		@apply w-[5px] h-[5px] rounded-full bg-current relative before:absolute before:inset-0 before:rounded-full before:border before:border-current;
+		&.ping-once{
+			@apply before:animate-ping-lg-once;	
+		}
+		&.ping{
+			@apply before:animate-ping-lg;	
+		}
+
+	}
 }
 .banner-mask{
 	mask: url(../images/banner-mask.svg) exclude;
 	mask-size: contain;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

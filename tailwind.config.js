@@ -52,6 +52,16 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 25s linear infinite',
+        'ping-lg': 'ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'ping-lg-once': 'ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) forwards',
+      },
+      keyframes: {
+        'ping-lg': {
+          '75%, 100%': { 
+            transform: 'scale(4)',
+            opacity: '0',
+          },
+        }
       },
     },
     screens: {

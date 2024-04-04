@@ -181,7 +181,7 @@ function InitializeSliders(){
 			]
 		});
 	});
-	$(".cart-slider").slick({
+	$(".cart-slider-mobile").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,
@@ -199,6 +199,20 @@ function InitializeSliders(){
 				settings: "unslick",
 			},
 		]
+	});
+	$(".cart-slider-payment").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		focusOnSelect: true,
+		dots: true,
+		arrows:true,
+		prevArrow: '<button type="button" class="slick-prev text-4xl text-gold aria-disabled:text-gray-300"><i class="fa-solid fa-chevron-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next text-4xl text-gold aria-disabled:text-gray-300"><i class="fa-solid fa-chevron-right"></i></button>',
+		dotsClass: 'absolute top-full right-0 left-0 h-8 *:py-3 flex flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
+		customPaging : function(slider, i) {
+			return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
+		},
 	});
 	
 }
