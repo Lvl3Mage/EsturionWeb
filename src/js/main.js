@@ -214,5 +214,27 @@ function InitializeSliders(){
 			return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
 		},
 	});
+	$(".banner-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		focusOnSelect: true,
+		dots: false,
+		arrows:true,
+		prevArrow: `<button type="button" class="slick-prev text-4xl top-0 bottom-0 m-auto text-white aria-disabled:text-gray-300 absolute left-3 z-10">
+			<div class="border-2 border-white rounded-full flex justify-center items-center py-5 px-4">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="37" viewBox="0 0 20 37" fill="none">
+					<path d="M18.0625 36L1 18.9375L18.0625 1.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+		</button>`,
+		nextArrow: `<button type="button" class="slick-prev text-4xl top-0 bottom-0 m-auto text-white aria-disabled:text-gray-300 absolute right-3 z-10">
+			<div class="border-2 border-white rounded-full flex justify-center items-center py-5 px-4 rotate-180">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="37" viewBox="0 0 20 37" fill="none">
+					<path d="M18.0625 36L1 18.9375L18.0625 1.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+		</button>`,
+	});
 	
 }
