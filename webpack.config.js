@@ -83,7 +83,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 exclude: `${PATHS.src}/${PATHS.images}`,
                 generator: {
