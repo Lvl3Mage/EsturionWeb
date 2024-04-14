@@ -9,7 +9,7 @@
 	top: 0;
 	&.modal-active{
 		transition: all 0s;
-		z-index: 450;
+		z-index: 30;
 		background: rgba(50,50,50,0.4);
 		.def-modal__outer-container{
 			transition: all 0.8s;

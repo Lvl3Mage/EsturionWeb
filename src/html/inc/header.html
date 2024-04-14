@@ -32,6 +32,8 @@
 							</span>
 						</div>
 					</div>
+
+					<div class="font-bold cursor-pointer hover:text-gold transition" data-modal-trigger data-modal-id="country-modal">Un pais</div>
 					<div class="flex-0 flex items-center justify-between">
 						<div class="flex items-center text-xl gap-5 sm:gap-3">
 							<a class="hover-pulse">
@@ -41,14 +43,25 @@
 								<i class="fa-brands fa-instagram"></i>
 							</a>
 							<div class="text-base flex items-center group/languages cursor-pointer border rounded-md border-white px-2.5" tabindex="-1">
-								<div class="pr-1 relative">
-									BR
-									<div class="opacity-0 group-focus/languages:opacity-100 transition-all top-[calc(100%+4px)] shadow-md absolute -left-1 -right-1 h-auto flex flex-col justify-center z-50 bg-whtie  border rounded-md ">
-										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition">
-											BR
+								<div class="pr-1 relative flex items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path d="M1.72727 11.9091H16.2727M1.72727 6.09091H16.2727M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17ZM9 17C11.1818 17 11.9091 13.3636 11.9091 9C11.9091 4.63636 11.1818 1 9 1C6.81818 1 6.09091 4.63636 6.09091 9C6.09091 13.3636 6.81818 17 9 17Z" stroke="#183250" stroke-width="1.3"/>
+									</svg>
+									<span class="ml-2">
+										BR
+									</span>
+									<div class="opacity-0 group-focus/languages:opacity-100 transition-all top-[calc(100%+4px)] shadow-md absolute -left-1  h-auto flex flex-col justify-center z-50 bg-whtie  border rounded-md ">
+										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition before:absolute before:w-3 before:h-[2px] before:bg-gold before:left-0 before:right-0 before:m-auto before:bottom-[-1px] before:rounded-full relative last:before:opacity-0">
+											BRasd
 										</a>
-										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition">
-											RU
+										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition before:absolute before:w-3 before:h-[2px] before:bg-gold before:left-0 before:right-0 before:m-auto before:bottom-[-1px] before:rounded-full relative last:before:opacity-0">
+											BRasd
+										</a>
+										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition before:absolute before:w-3 before:h-[2px] before:bg-gold before:left-0 before:right-0 before:m-auto before:bottom-[-1px] before:rounded-full relative last:before:opacity-0">
+											BRasd
+										</a>
+										<a class="flex justify-center py-1 px-2.5 bg-white hover:bg-gray-300 w-full transition before:absolute before:w-3 before:h-[2px] before:bg-gold before:left-0 before:right-0 before:m-auto before:bottom-[-1px] before:rounded-full relative last:before:opacity-0">
+											BRasd
 										</a>
 									</div>
 								</div>
@@ -160,8 +173,51 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 			
+		</div>
+	</div>
+
+	<!-- Country modal -->
+	<div class="def-modal modal" id="country-modal">
+		<div class="def-modal__outer-container container">
+			<div class="def-modal__inner-container def-modal__inner-container--100 max-w-2xl">
+				<div class="border border-gold p-2 rounded-2xl">
+					<div class="def-modal__wrapper modal-window p-9 md:p-4  rounded-2xl shadow-lg">
+
+						<!-- <div class="def-modal__top mb-2 px-2">
+							<div class="def-modal__title text-2xl">
+								<span class="modal-title">Modal title</span>
+							</div>
+							<div class="group/cross relative h-[30px] w-[35px] flex-col justify-center flex cursor-pointer modal-cross">
+								<div class="bg-gold h-[4px] w-full transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75 translate-y-[2px] rotate-[135deg]"></div>
+								<div class="bg-gold h-[4px] w-full transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75 translate-y-[-2px] rotate-[-135deg]"></div>
+							</div>
+						</div> -->
+						<div class="def-modal__content-wrapper modal-content-wrapper">
+
+							<div class="flex justify-center items-center gap-6 mb-8 text-center mt-5">
+								<img src="../assets/images/left-decor.svg" alt="" class="w-12 md:hidden">
+								<h2 class="text-gold font-roman text-3xl lg:text-2xl uppercase">CHOOSE YOUR COUNTRY</h2>
+								<img src="../assets/images/right-decor.svg" alt="" class="w-12 md:hidden">
+								
+							</div>
+
+							<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold z-40">
+								<option value="" selected disabled>Страна</option>
+								<option value="es" >Испания</option>
+								<option value="fr" >Франция</option>
+							</select>
+							<div class="font-bold text-center text-sm mt-6">
+								By clicking CONFIRM, you agree to the site rules and the use of cookies
+							</div>
+							<a class="btn text-blue uppercase mt-5 block">Confirm</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>  
 		</div>
 	</div>
 	<!-- relative after:absolute after:h-0.5 after:w-8 after:rounded after:top-0 after:bottom-0 after:m-auto after:bg-gray-100 after:left-full after:ml-4
