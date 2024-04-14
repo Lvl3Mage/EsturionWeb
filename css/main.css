@@ -548,8 +548,8 @@ a {
   height: 100%;
 }
 .banner-mask {
-  -webkit-mask: url(../assets/fonts/banner-mask.svg) exclude;
-          mask: url(../assets/fonts/banner-mask.svg) exclude;
+  -webkit-mask: url(../assets/img/banner-mask.svg) exclude;
+          mask: url(../assets/img/banner-mask.svg) exclude;
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -559,8 +559,8 @@ a {
 }
 @media screen and (max-width: 767px) {
   .banner-mask {
-    -webkit-mask: url(../assets/fonts/banner-mask-mobile.svg) exclude;
-            mask: url(../assets/fonts/banner-mask-mobile.svg) exclude;
+    -webkit-mask: url(../assets/img/banner-mask-mobile.svg) exclude;
+            mask: url(../assets/img/banner-mask-mobile.svg) exclude;
   }
 }
 
