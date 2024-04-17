@@ -547,6 +547,28 @@ a {
 .def-slider--full-h .slick-slide > div {
   height: 100%;
 }
+
+.rotate {
+  display: none;
+}
+
+.rotate.active {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.rotate > img {
+  width: 100px;
+  height: 100px;
+}
 .banner-mask {
   -webkit-mask: url(../assets/img/banner-mask.svg) exclude;
           mask: url(../assets/img/banner-mask.svg) exclude;
@@ -2142,6 +2164,9 @@ body{
   -o-object-position: center;
      object-position: center;
 }
+.p-12{
+  padding: 3rem;
+}
 .p-2{
   padding: 0.5rem;
 }
@@ -2156,9 +2181,6 @@ body{
 }
 .p-7{
   padding: 1.75rem;
-}
-.p-9{
-  padding: 2.25rem;
 }
 .px-1{
   padding-left: 0.25rem;
