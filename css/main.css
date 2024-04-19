@@ -2999,6 +2999,10 @@ body{
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.group\/item:hover .group-hover\/item\:-translate-y-2{
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .group\/link:hover .group-hover\/link\:-translate-x-2{
   --tw-translate-x: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3355,6 +3359,9 @@ body{
 .\*\:\[\&\.slick-active\]\:\*\:bg-gold > *.slick-active > *{
   --tw-bg-opacity: 1;
   background-color: rgb(211 176 150 / var(--tw-bg-opacity));
+}
+.\*\:\[\&\.slick-active\]\:\*\:outline-gold > *.slick-active > *{
+  outline-color: #D3B096;
 }
 .\*\:\[\&\.slick-active\]\:\*\:outline-white > *.slick-active > *{
   outline-color: #fff;

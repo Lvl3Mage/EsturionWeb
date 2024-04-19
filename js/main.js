@@ -579,6 +579,20 @@ function InitializeSliders() {
 			</div>`;
     }
   });
+  $(".item-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    focusOnSelect: true,
+    centereMode: true,
+    dots: true,
+    arrows: false,
+    dotsClass: 'h-8 *:p-3 flex justify-center gap-2 *:[&.slick-active]:*:outline-gold *:hover:*:brightness-90 *:rounded-full overflow-hidden',
+    customPaging: function (slider, i) {
+      return `<div class="bg-gold cursor-pointer w-2 h-2 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2">
+			</div>`;
+    }
+  });
 }
 function EnableSliderFiltering(sliderSelector, selector) {
   $(sliderSelector).slick('slickUnfilter');
