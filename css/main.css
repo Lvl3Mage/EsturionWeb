@@ -1236,18 +1236,17 @@ body{
 .wpcf7 .field{
   padding: 0.25rem;
 }
-.wpcf7 .form-control {
-    width: 100%;
-    border-radius: 9999px;
-    border-width: 2px;
-    --tw-border-opacity: 1;
-    border-color: rgb(229 229 229 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    padding: 1.25rem;
-    --tw-text-opacity: 1;
-    color: rgb(120 113 108 / var(--tw-text-opacity));
-  }
+.wpcf7 .form-control{
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 229 229 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity));
+}
 .wpcf7 .form-control::-moz-placeholder{
   opacity: 0.9;
 }
@@ -1286,6 +1285,10 @@ body{
   outline-style: solid;
   outline-width: 1px;
   outline-color: #ef4444;
+}
+.wpcf7 .form-control{
+  width: 100% !important;
+  border-radius: 9999px !important;
 }
 .wpcf7 a{
   --tw-text-opacity: 1;
