@@ -1,0 +1,19 @@
+.rotate {
+	display: none;
+}
+.rotate.active {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 100;
+}
+.rotate>img{
+	width: 100px;
+	height: 100px;
+}
