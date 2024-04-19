@@ -23,6 +23,36 @@
 	}
 }
 @layer components{
+	.def-text{
+		h1{
+			@apply text-5xl sm:text-3xl font-bold font-roman mb-2;
+		}
+		h2{
+			@apply text-4xl sm:text-2xl font-bold font-roman mb-2;
+		}
+		h3, h4, h5, h6{
+			@apply text-3xl sm:text-xl font-bold font-roman mb-2;
+		}
+		p{
+			@apply my-5;
+		}
+		ul{
+			@apply my-5;
+			li{
+				@apply pl-4 relative ;
+				@apply before:w-2 before:h-2 before:rounded-full before:border-gold before:inline-block before:border-2 before:absolute before:left-0;
+				@apply before:top-0 before:bottom-0 before:m-auto;
+			}
+		}
+		ol{
+			@apply my-5;
+			@apply list-decimal;
+			li{
+				@apply ml-4;
+			}
+		}
+		
+	}
 	.hover-pulse{
 		@apply hover:drop-shadow ease-in-out duration-300 hover:scale-[0.95] transition;
 	}
