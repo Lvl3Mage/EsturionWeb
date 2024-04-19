@@ -2246,6 +2246,9 @@ body{
   -o-object-position: center;
      object-position: center;
 }
+.p-12{
+  padding: 3rem;
+}
 .p-2{
   padding: 0.5rem;
 }
@@ -2260,9 +2263,6 @@ body{
 }
 .p-7{
   padding: 1.75rem;
-}
-.p-9{
-  padding: 2.25rem;
 }
 .px-1{
   padding-left: 0.25rem;

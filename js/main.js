@@ -440,6 +440,8 @@ window.InitializeDropdowns = InitializeDropdowns;
 window.InitializeSliders = InitializeSliders;
 window.OpenModal = _libs_modal_js__WEBPACK_IMPORTED_MODULE_4__.OpenModal;
 window.CloseModal = _libs_modal_js__WEBPACK_IMPORTED_MODULE_4__.CloseModal;
+window.EnableSliderFiltering = EnableSliderFiltering;
+window.DisableSliderFiltering = DisableSliderFiltering;
 $(document).ready(function () {
   InitializeDropdowns();
   InitializeSliders();
@@ -577,6 +579,13 @@ function InitializeSliders() {
 			</div>`;
     }
   });
+}
+function EnableSliderFiltering(sliderSelector, selector) {
+  $(sliderSelector).slick('slickUnfilter');
+  $(sliderSelector).slick('slickFilter', selector);
+}
+function DisableSliderFiltering() {
+  $(sliderSelector).slick('slickUnfilter');
 }
 
 /***/ }),
