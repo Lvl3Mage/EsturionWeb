@@ -376,6 +376,12 @@ $(document).on("mousemove", function (e) {
   mouseCoords.x = e.pageX;
   mouseCoords.y = e.pageY;
 });
+$("[data-dropdown].product-radio").on("selectmenuchange", function (event, ui) {
+  let price = ui.item.element.data('price');
+  let variation_id = ui.item.element.data('variation-id');
+  ui.item.element.parents('.item-top-level').find('.product-price>.price').text(price);
+  ui.item.element.parents('.item-top-level').find('.add-product-to-cart').attr('data-variation-id', variation_id);
+});
 $(document).on("click", "[data-zoom-button]", function (e) {
   e.stopPropagation();
   activeZoomWindow = $(this.closest("[data-zoom-window]"));
@@ -449,6 +455,9 @@ function InitializeDropdowns() {
       iconClass = this.getAttribute("data-icon-class");
     }
     $(this).selectmenu({
+      // change: function( event, ui ) {
+      // 	console.log(event, ui)
+      // },
       classes: {
         "ui-selectmenu-button": ` ${this.className} cursor-pointer group/dropdown`,
         "ui-selectmenu-icon": `${iconClass}`,
