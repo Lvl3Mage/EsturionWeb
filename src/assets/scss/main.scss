@@ -99,6 +99,7 @@
 			@apply p-1;
 		}
 		.form-control{
+			border-radius: 9999px !important;
 			@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 w-full;
 			@apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
 			@apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
