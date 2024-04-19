@@ -109,8 +109,8 @@ window.InitializeDropdowns = InitializeDropdowns;
 window.InitializeSliders = InitializeSliders;
 window.OpenModal = OpenModal;
 window.CloseModal = CloseModal;
-window.EnableBannerFiltering = EnableBannerFiltering;
-window.DisableBannerFiltering = DisableBannerFiltering;
+window.EnableSliderFiltering = EnableSliderFiltering;
+window.DisableSliderFiltering = DisableSliderFiltering;
 $(document).ready(function(){
 	InitializeDropdowns();
 	InitializeSliders();
@@ -257,10 +257,10 @@ function InitializeSliders(){
 	});
 	
 }
-function EnableBannerFiltering(selector){
-	$(".banner-slider").slick('slickUnfilter');
-	$(".banner-slider").slick('slickFilter', selector);
+function EnableSliderFiltering(sliderSelector, selector){
+	$(sliderSelector).slick('slickUnfilter');
+	$(sliderSelector).slick('slickFilter', selector);
 }
-function DisableBannerFiltering(){
-	$(".banner-slider").slick('slickUnfilter');
+function DisableSliderFiltering(){
+	$(sliderSelector).slick('slickUnfilter');
 }
