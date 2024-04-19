@@ -81,6 +81,36 @@
 			border-radius: 3px;
 		}
 	}
+	.wpcf7{
+		.container{
+			max-width: 100%;
+			padding: 0;
+		}
+		.row{
+			@apply flex;
+			.full{
+				@apply basis-full;
+			}
+			.one-half{
+				@apply basis-1/2;
+			}
+		}
+		.field {
+			@apply p-1;
+		}
+		.form-control{
+			@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 w-full;
+			@apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
+			@apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
+			@apply group-has-[:invalid]/input:outline-red-500 group-has-[:invalid]/input:outline-1 group-has-[:invalid]/input:outline;
+		}
+		a{
+			@apply underline text-gold;
+		}
+		.btn{
+			@apply w-full mb-1;
+		}
+	}
 	// .scrollbar-x-xs{
 	// 	&::-webkit-scrollbar {
 	// 		height: 3px;
