@@ -1764,6 +1764,9 @@ body{
 .mt-\[length\:--margin-top\]{
   margin-top: var(--margin-top);
 }
+.mt-auto{
+  margin-top: auto;
+}
 .block{
   display: block;
 }
