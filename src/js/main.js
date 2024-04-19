@@ -261,6 +261,6 @@ function EnableSliderFiltering(sliderSelector, selector){
 	$(sliderSelector).slick('slickUnfilter');
 	$(sliderSelector).slick('slickFilter', selector);
 }
-function DisableSliderFiltering(){
+function DisableSliderFiltering(sliderSelector){
 	$(sliderSelector).slick('slickUnfilter');
 }
