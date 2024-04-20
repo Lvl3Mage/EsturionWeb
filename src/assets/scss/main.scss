@@ -81,6 +81,19 @@
 			border-radius: 3px;
 		}
 	}
+	.breadcrumbs{
+		&>div{
+			&>span{
+				@apply flex gap-2 pb-5 pt-2;
+				&>span{
+					@apply after:w-1 after:h-1 after:rounded-full after:bg-gold after:inline-block flex items-center gap-2 last:after:hidden;
+					a{
+						@apply hover:text-gold transition
+					}
+				}
+			}
+		}
+	}
 	.wpcf7{
 		.container{
 			max-width: 100%;
