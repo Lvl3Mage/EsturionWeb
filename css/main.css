@@ -1862,6 +1862,9 @@ body{
 .mr-7{
   margin-right: 1.75rem;
 }
+.mr-auto{
+  margin-right: auto;
+}
 .mt-10{
   margin-top: 2.5rem;
 }
