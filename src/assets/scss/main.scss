@@ -107,6 +107,7 @@
 		}
 		.btn{
 			@apply w-full mb-1;
+			@apply rounded-full #{!important};
 		}
 	}
 	// .scrollbar-x-xs{
