@@ -222,7 +222,7 @@
 	</div>
 	<!-- relative after:absolute after:h-0.5 after:w-8 after:rounded after:top-0 after:bottom-0 after:m-auto after:bg-gray-100 after:left-full after:ml-4
 					before:absolute before:h-0.5 before:w-8 before:rounded before:top-0 before:bottom-0 before:m-auto before:bg-gray-100 before:right-full before:mr-4 -->	
-<div class="container my-3">
+<div class="container my-3 relative">
 	<!-- Heading -->
 	<div class="flex justify-between items-center flex-wrap mb-7">
 		<div class="flex justify-start items-center gap-6 mb-5">
@@ -236,14 +236,17 @@
 		</a>
 	</div>
 	<!-- Orders -->
-	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
+	<div class="flex justify-center items-center mb-16 py-4 text-gray-600 text-lg">
+		<span>Ваша корзина пуста.</span>
+	</div>
+	<!-- <div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
 		<div class="px-2 py-4">
 			<div class="card card-compact bg-white shadow-lg rounded-2xl">
 				<div class="card-body flex items-center justify-between gap-8">
 					<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
 						<div class="flex items-center md:basis-full mr-auto"">
 							<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
-								<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
+								<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover">
 							</div>
 							<div class="text-xl font-roman font-bold ml-10 uppercase">
 								икра Чёрная классик икра Чёрная классик 
@@ -274,7 +277,7 @@
 					<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
 						<div class="flex items-center md:basis-full mr-auto"">
 							<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
-								<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
+								<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover">
 							</div>
 							<div class="text-xl font-roman font-bold ml-10 uppercase">
 								икра Чёрная классик
@@ -305,7 +308,7 @@
 					<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
 						<div class="flex items-center md:basis-full mr-auto">
 							<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
-								<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
+								<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover">
 							</div>
 							<div class="text-xl font-roman font-bold ml-10 uppercase">
 								икра Чёрная классик
@@ -330,8 +333,13 @@
 			</div>
 			
 		</div>
+	</div> -->
+	<!-- Loader -->
+	<div class="absolute inset-0 flex justify-center items-center bg-white/70 z-20 opacity-0 pointer-events-none [&.active]:opacity-100 [&.active]:pointer-events-auto transition group/loader">
+		<div class="group-[&.active]/loader:translate-y-0 translate-y-10 transition ease-out-wobble duration-300">
+			<div class="loader"></div>
+		</div>
 	</div>
-
 	<!-- Coupons -->
 	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5">
 		<div class="relative w-fit h-fit m-4 mr-6">
