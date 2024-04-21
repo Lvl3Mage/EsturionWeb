@@ -1892,6 +1892,9 @@ body{
 .block{
   display: block;
 }
+.inline-block{
+  display: inline-block;
+}
 .inline{
   display: inline;
 }
@@ -2796,6 +2799,22 @@ body{
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
+}
+
+.before\:inset-0::before{
+  content: var(--tw-content);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.before\:inset-0\.5::before{
+  content: var(--tw-content);
+  top: 0.125rem;
+  right: 0.125rem;
+  bottom: 0.125rem;
+  left: 0.125rem;
 }
 
 .before\:inset-1::before{
