@@ -1498,7 +1498,25 @@ body{
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
+    /* Track */
+    /* Handle on hover */
 }
+.dropdown-menu-gold ul::-webkit-scrollbar {
+    width: 8px;
+  }
+.dropdown-menu-gold ul::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+.dropdown-menu-gold ul::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: #a08571;
+  }
+.dropdown-menu-gold ul::-webkit-scrollbar-thumb {
+    background-color: #D3B096;
+    background-clip: padding-box;
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
 .dropdown-menu-gold .ui-menu-item.ui-state-disabled .ui-menu-item-wrapper{
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
