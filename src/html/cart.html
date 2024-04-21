@@ -1,5 +1,5 @@
 <%- include('inc/header.html') %>	
-<div class="container my-3">
+<div class="container my-3 relative">
 	<!-- Heading -->
 	<div class="flex justify-between items-center flex-wrap mb-7">
 		<div class="flex justify-start items-center gap-6 mb-5">
@@ -13,7 +13,10 @@
 		</a>
 	</div>
 	<!-- Orders -->
-	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
+	<div class="flex justify-center items-center mb-16 py-4 text-gray-600 text-lg">
+		<span>Ваша корзина пуста.</span>
+	</div>
+	<!-- <div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
 		<div class="px-2 py-4">
 			<div class="card card-compact bg-white shadow-lg rounded-2xl">
 				<div class="card-body flex items-center justify-between gap-8">
@@ -107,8 +110,7 @@
 			</div>
 			
 		</div>
-	</div>
-
+	</div> -->
 	<!-- Coupons -->
 	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5">
 		<div class="relative w-fit h-fit m-4 mr-6">
@@ -140,6 +142,30 @@
 			<div class="cross group/cross relative h-[20px] w-[20px] flex-col justify-center flex cursor-pointer">
 				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
 				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="def-modal modal modal-active" id="excursion-modal">
+	<div class="def-modal__outer-container container">
+		<div class="def-modal__inner-container def-modal__inner-container--50 max-w-xl">
+			<div class="border border-gold p-2 rounded-2xl">
+				<div class="def-modal__wrapper modal-window p-12 md:p-4  rounded-2xl shadow-lg">
+					<div class="def-modal__top mb-2 px-2 justify-center">
+						<div class="def-modal__title text-4xl text-gold font-roman flex gap-6">
+							<span class="modal-title">Product added!</span>
+							<img src="../assets/images/right-decor.svg" alt="" class="w-12 md:hidden">
+						</div>
+					</div>
+					<div class="def-modal__content-wrapper modal-content-wrapper">
+						<div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, earum corporis, accusantium ratione impedit, fugiat magni ab dolore aperiam, eos dolores nobis debitis omnis modi. Quia quibusdam, fuga atque asperiores.</div>
+						<div class="flex justify-between gap-4 mt-4 md:flex-wrap">
+							<a href="" class="btn uppercase grow max-w-xs md:max-w-full md:basis-full">Отменить</a>
+							<a href="" class="btn uppercase grow max-w-xs md:max-w-full md:basis-full">Продолжить</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
