@@ -253,6 +253,7 @@
 	.dropdown-menu-gold{
 		ul{
 			@apply bg-white rounded-lg shadow-lg border border-gold;
+			@apply scrollbar;
 		}
 		& .ui-menu-item.ui-state-disabled .ui-menu-item-wrapper {
 			@apply text-neutral-400;
