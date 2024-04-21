@@ -334,12 +334,6 @@
 			
 		</div>
 	</div> -->
-	<!-- Loader -->
-	<div class="absolute inset-0 flex justify-center items-center bg-white/70 z-20 opacity-0 pointer-events-none [&.active]:opacity-100 [&.active]:pointer-events-auto transition group/loader">
-		<div class="group-[&.active]/loader:translate-y-0 translate-y-10 transition ease-out-wobble duration-300">
-			<div class="loader"></div>
-		</div>
-	</div>
 	<!-- Coupons -->
 	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5">
 		<div class="relative w-fit h-fit m-4 mr-6">
@@ -371,6 +365,28 @@
 			<div class="cross group/cross relative h-[20px] w-[20px] flex-col justify-center flex cursor-pointer">
 				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
 				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="def-modal modal modal-active" id="excursion-modal">
+	<div class="def-modal__outer-container container">
+		<div class="def-modal__inner-container def-modal__inner-container--50 max-w-lg">
+			<div class="border border-gold p-2 rounded-2xl">
+				<div class="def-modal__wrapper modal-window p-12 md:p-4  rounded-2xl shadow-lg">
+					<div class="def-modal__top mb-2 px-2 justify-center">
+						<div class="def-modal__title text-4xl text-gold font-roman">
+							<span class="modal-title">Product added!</span>
+						</div>
+					</div>
+					<div class="def-modal__content-wrapper modal-content-wrapper">
+						<div class="flex justify-between gap-4 mt-4 flex-col">
+							<a href="" class="btn uppercase grow basis-full">Отменить</a>
+							<a href="" class="btn uppercase grow basis-full">Продолжить</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
