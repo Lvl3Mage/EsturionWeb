@@ -205,6 +205,9 @@
 	}
 
 	.dropdown-radio-menu{
+		ul{
+			@apply max-h-[300px] overflow-y-auto;
+		}
 		ul .ui-menu-item div{
 			@apply relative;
 			padding-left: 40px !important;
