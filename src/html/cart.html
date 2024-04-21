@@ -1,5 +1,5 @@
 <%- include('inc/header.html') %>	
-<div class="container my-3">
+<div class="container my-3 relative">
 	<!-- Heading -->
 	<div class="flex justify-between items-center flex-wrap mb-7">
 		<div class="flex justify-start items-center gap-6 mb-5">
@@ -13,7 +13,10 @@
 		</a>
 	</div>
 	<!-- Orders -->
-	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
+	<div class="flex justify-center items-center mb-16 py-4 text-gray-600 text-lg">
+		<span>Ваша корзина пуста.</span>
+	</div>
+	<!-- <div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
 		<div class="px-2 py-4">
 			<div class="card card-compact bg-white shadow-lg rounded-2xl">
 				<div class="card-body flex items-center justify-between gap-8">
@@ -107,8 +110,13 @@
 			</div>
 			
 		</div>
+	</div> -->
+	<!-- Loader -->
+	<div class="absolute inset-0 flex justify-center items-center bg-white/70 z-20 opacity-0 pointer-events-none [&.active]:opacity-100 [&.active]:pointer-events-auto transition group/loader">
+		<div class="group-[&.active]/loader:translate-y-0 translate-y-10 transition ease-out-wobble duration-300">
+			<div class="loader"></div>
+		</div>
 	</div>
-
 	<!-- Coupons -->
 	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5">
 		<div class="relative w-fit h-fit m-4 mr-6">
