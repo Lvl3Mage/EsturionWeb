@@ -1422,6 +1422,10 @@ body{
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
 }
+.dropdown-radio-menu ul{
+  max-height: 300px;
+  overflow-y: auto;
+}
 .dropdown-radio-menu ul .ui-menu-item div{
   position: relative;
     padding-left: 40px !important;
