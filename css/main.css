@@ -2241,9 +2241,6 @@ body{
 .justify-between{
   justify-content: space-between;
 }
-.justify-around{
-  justify-content: space-around;
-}
 .gap-1{
   gap: 0.25rem;
 }
@@ -3085,6 +3082,11 @@ body{
 .after\:w-\[calc\(100\%_-16px\*4\)\]::after{
   content: var(--tw-content);
   width: calc(100% - 16px * 4);
+}
+
+.after\:grow::after{
+  content: var(--tw-content);
+  flex-grow: 1;
 }
 
 .after\:origin-left::after{
