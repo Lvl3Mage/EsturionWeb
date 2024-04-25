@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/html/*.html","./src/html/**/*.html","./src/js/**/*.js"],
+  safelist: [
+    "whitespace-nowrap",
+  ],
   theme: {
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
