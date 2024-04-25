@@ -1132,6 +1132,12 @@ body{
     max-width: 1600px;
   }
 }
+@media (max-width: 767px){
+  .def-text{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
 .def-text h1{
   margin-bottom: 0.5rem;
   font-family: Times New Roman, sans-serif;
@@ -1226,6 +1232,12 @@ body{
   padding-bottom: 1.25rem;
   padding-top: 0.5rem;
 }
+@media (max-width: 767px){
+  .breadcrumbs > div > span{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
 .breadcrumbs > div > span > span{
   display: flex;
   align-items: center;
@@ -1243,6 +1255,10 @@ body{
 .breadcrumbs > div > span > span:last-child::after{
   content: var(--tw-content);
   display: none;
+}
+.breadcrumbs > div > span > span:last-child{
+  --tw-text-opacity: 1;
+  color: rgb(211 176 150 / var(--tw-text-opacity));
 }
 .breadcrumbs > div > span > span a{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -2491,9 +2507,6 @@ body{
 .pb-4{
   padding-bottom: 1rem;
 }
-.pb-5{
-  padding-bottom: 1.25rem;
-}
 .pb-7{
   padding-bottom: 1.75rem;
 }
@@ -3062,11 +3075,6 @@ body{
   margin-left: 1rem;
 }
 
-.after\:inline-block::after{
-  content: var(--tw-content);
-  display: inline-block;
-}
-
 .after\:h-0::after{
   content: var(--tw-content);
   height: 0px;
@@ -3075,16 +3083,6 @@ body{
 .after\:h-0\.5::after{
   content: var(--tw-content);
   height: 0.125rem;
-}
-
-.after\:h-1::after{
-  content: var(--tw-content);
-  height: 0.25rem;
-}
-
-.after\:w-1::after{
-  content: var(--tw-content);
-  width: 0.25rem;
 }
 
 .after\:w-8::after{
@@ -3130,12 +3128,6 @@ body{
   border-color: rgb(211 176 150 / var(--tw-border-opacity));
 }
 
-.after\:bg-gold::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 176 150 / var(--tw-bg-opacity));
-}
-
 .after\:bg-gray-100::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -3170,11 +3162,6 @@ body{
 .last\:before\:opacity-0:last-child::before{
   content: var(--tw-content);
   opacity: 0;
-}
-
-.last\:after\:hidden:last-child::after{
-  content: var(--tw-content);
-  display: none;
 }
 
 .before\:focus-within\:scale-100[focus-within]::before{
