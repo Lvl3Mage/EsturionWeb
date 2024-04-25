@@ -229,6 +229,14 @@ function InitializeSliders(){
 		customPaging : function(slider, i) {
 			return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
 		},
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false,
+				}
+			},
+		]
 	});
 	$(".banner-slider").slick({
 		slidesToShow: 1,
