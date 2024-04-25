@@ -491,14 +491,16 @@ function InitializeSliders() {
         breakpoint: 1023,
         settings: {
           vertical: false,
-          verticalSwiping: false
+          verticalSwiping: false,
+          arrows: false
         }
       }, {
         breakpoint: 550,
         settings: {
           vertical: false,
           verticalSwiping: false,
-          slidesToShow: 3
+          slidesToShow: 3,
+          arrows: false
         }
       }]
     });
