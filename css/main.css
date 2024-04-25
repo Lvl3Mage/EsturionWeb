@@ -1962,6 +1962,9 @@ body{
 .h-5{
   height: 1.25rem;
 }
+.h-6{
+  height: 1.5rem;
+}
 .h-7{
   height: 1.75rem;
 }
@@ -2095,6 +2098,9 @@ body{
 }
 .max-w-\[600px\]{
   max-width: 600px;
+}
+.max-w-full{
+  max-width: 100%;
 }
 .max-w-none{
   max-width: none;
@@ -2390,6 +2396,10 @@ body{
 }
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -3615,8 +3625,14 @@ body{
   .md\:top-full{
     top: 100%;
   }
+  .md\:m-auto{
+    margin: auto;
+  }
   .md\:block{
     display: block;
+  }
+  .md\:flex{
+    display: flex;
   }
   .md\:hidden{
     display: none;
@@ -3639,6 +3655,12 @@ body{
   .md\:max-w-full{
     max-width: 100%;
   }
+  .md\:grow{
+    flex-grow: 1;
+  }
+  .md\:basis-1\/4{
+    flex-basis: 25%;
+  }
   .md\:basis-full{
     flex-basis: 100%;
   }
@@ -3654,6 +3676,9 @@ body{
   .md\:justify-center{
     justify-content: center;
   }
+  .md\:gap-y-8{
+    row-gap: 2rem;
+  }
   .md\:p-2{
     padding: 0.5rem;
   }
@@ -3662,6 +3687,9 @@ body{
   }
   .md\:p-4{
     padding: 1rem;
+  }
+  .md\:text-center{
+    text-align: center;
   }
   .md\:text-2xl{
     font-size: 1.5rem;
