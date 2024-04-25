@@ -3559,6 +3559,12 @@ body{
   .lg\:flex-wrap{
     flex-wrap: wrap;
   }
+  .lg\:items-center{
+    align-items: center;
+  }
+  .lg\:justify-around{
+    justify-content: space-around;
+  }
   .lg\:gap-4{
     gap: 1rem;
   }
