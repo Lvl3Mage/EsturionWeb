@@ -200,8 +200,9 @@
 	.btn{
 		@apply p-4 rounded-full border-2 border-gold text-center font-roman text-xl font-bold;
 		@apply md:p-2 md:text-lg;
-		@apply hover:bg-gold hover:text-white transition cursor-pointer;
+		@apply hover:[&:not(:disabled)]:bg-gold hover:[&:not(:disabled)]:text-white transition cursor-pointer;
 		@apply active:shadow-inner-md;
+		@apply disabled:opacity-80 disabled:bg-gray-200 disabled:border-gray-400;
 	}
 
 	.dropdown-radio-menu{

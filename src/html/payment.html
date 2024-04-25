@@ -1,7 +1,7 @@
 <%- include('inc/header.html') %>
 <div class="container my-3">
 	<div class="flex justify-between items-start xl:flex-wrap gap-10">
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full">
+		<div class="xl:static sticky top-[100px] grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full">
 			<div class="flex gap-6 cart-slider-payment mb-16">
 				<div class="px-2 py-4">
 					<div class="card card-compact bg-white shadow-lg rounded-2xl">
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm">
+		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm group/form">
 			<div class="flex items-center mb-10">
 				<div class="text-red-500 status-dot"></div>
 				<div class="text-zinc-950 ml-3">
@@ -114,7 +114,7 @@
 								<option value="es" >Испания</option>
 								<option value="fr" >Франция</option>
 							</select>
-							<div class="text-red-400 text-xs mt-2">Ошибка</div>
+							<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/input:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
 						</div>
 					</div>
 					<div class="basis-1/2 md:basis-full">
@@ -127,7 +127,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pb-12 border-b border-neutral-200 mb-12">
+			<div class="pb-6 border-b border-neutral-200 mb-12">
 				<div class="text-gold text-2xl font-roman mb-7">
 					Доставка
 				</div>
