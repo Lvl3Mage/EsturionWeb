@@ -1,181 +1,293 @@
 <%- include('inc/header.html') %>	
 <div class="container my-3">
 	<div class="flex gap-10 lg:flex-wrap items-start">
-		<div class="sticky -top-16 lg:static card card-wide shadow-lg bg-white basis-[600px] shrink-0 lg:basis-full lg:m-auto max-w-[600px]">
-			<div class="card-body min-w-0">
-				<div class="product-slider flex lg:flex-col-reverse gap-10 items-stretch min-w-0 mb-10">
-					<div class="product-nav-slider leading-[0] basis-[90px] lg:basis-auto shrink-0 flex flex-col lg:flex-row justify-between relative ml-12 lg:ml-0 lg:mb-12 min-w-0">
-						<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
-							<div class="aspect-square rounded-2xl overflow-hidden">
-								<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
-							</div>
+		<div class="sticky -top-16 lg:static basis-[600px] shrink-0 lg:basis-full lg:m-auto max-w-[600px] min-w-0">
+			<!-- MOBILE SLIDER -->
+			<div class="product-slider lg:flex-col-reverse gap-10 items-stretch min-w-0 mb-10 hidden lg:flex">
+				<div class="product-nav-slider leading-[0] basis-[90px] lg:basis-auto shrink-0 flex flex-col lg:flex-row justify-between relative ml-12 lg:ml-0 lg:mb-12 min-w-0">
+					<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+						<div class="aspect-square rounded-2xl overflow-hidden">
+							<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
 						</div>
-						<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
-							<div class="aspect-square rounded-2xl overflow-hidden">
-								<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
-							</div>
+					</div>
+					<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+						<div class="aspect-square rounded-2xl overflow-hidden">
+							<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
 						</div>
-						<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
-							<div class="aspect-square rounded-2xl overflow-hidden">
-								<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
-							</div>
+					</div>
+					<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+						<div class="aspect-square rounded-2xl overflow-hidden">
+							<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
 						</div>
-						<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
-							<div class="aspect-square rounded-2xl overflow-hidden">
-								<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
-							</div>
+					</div>
+					<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+						<div class="aspect-square rounded-2xl overflow-hidden">
+							<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
 						</div>
-						<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
-							<div class="aspect-square rounded-2xl overflow-hidden">
-								<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+					</div>
+					<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+						<div class="aspect-square rounded-2xl overflow-hidden">
+							<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="product-main-slider grow min-w-0">
+					<div class="w-full px-1">
+						<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+							<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+								<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+							</div>
+							<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+							<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+								<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+								<div class="absolute overflow-hidden rounded-full inset-0">
+									<img data-zoom-area-image alt="" class="absolute max-w-none">
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="product-main-slider grow min-w-0">
-						<div class="w-full px-1">
-							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
-									<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
-								</div>
-								<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
-								<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
-									<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
-									<div class="absolute overflow-hidden rounded-full inset-0">
-										<img data-zoom-area-image alt="" class="absolute max-w-none">
-									</div>
+					<div class="w-full px-1">
+						<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+							<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+								<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+							</div>
+							<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+							<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+								<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+								<div class="absolute overflow-hidden rounded-full inset-0">
+									<img data-zoom-area-image alt="" class="absolute max-w-none">
 								</div>
 							</div>
 						</div>
-						<div class="w-full px-1">
-							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
-									<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
-								</div>
-								<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
-								<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
-									<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
-									<div class="absolute overflow-hidden rounded-full inset-0">
-										<img data-zoom-area-image alt="" class="absolute max-w-none">
-									</div>
+					</div>
+					<div class="w-full px-1">
+						<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+							<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+								<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+							</div>
+							<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+							<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+								<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+								<div class="absolute overflow-hidden rounded-full inset-0">
+									<img data-zoom-area-image alt="" class="absolute max-w-none">
 								</div>
 							</div>
 						</div>
-						<div class="w-full px-1">
-							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
-									<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
-								</div>
-								<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
-								<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
-									<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
-									<div class="absolute overflow-hidden rounded-full inset-0">
-										<img data-zoom-area-image alt="" class="absolute max-w-none">
-									</div>
+					</div>
+					<div class="w-full px-1">
+						<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+							<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+								<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+							</div>
+							<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+							<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+								<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+								<div class="absolute overflow-hidden rounded-full inset-0">
+									<img data-zoom-area-image alt="" class="absolute max-w-none">
 								</div>
 							</div>
 						</div>
-						<div class="w-full px-1">
-							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
-									<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
-								</div>
-								<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
-								<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
-									<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
-									<div class="absolute overflow-hidden rounded-full inset-0">
-										<img data-zoom-area-image alt="" class="absolute max-w-none">
-									</div>
-								</div>
+					</div>
+					<div class="w-full px-1">
+						<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+							<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+								<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
 							</div>
-						</div>
-						<div class="w-full px-1">
-							<div class="rounded-2xl overflow-hidden w-full aspect-portrait relative" data-zoom-window data-zoom-factor="2">
-								<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
-									<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
-								</div>
-								<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
-								<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
-									<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
-									<div class="absolute overflow-hidden rounded-full inset-0">
-										<img data-zoom-area-image alt="" class="absolute max-w-none">
-									</div>
+							<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+							<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+								<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+								<div class="absolute overflow-hidden rounded-full inset-0">
+									<img data-zoom-area-image alt="" class="absolute max-w-none">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="border border-gold rounded-2xl p-6 mb-10 lg:hidden">
-					<h2 class="font-bold text-2xl font-roman text-center mb-5">Выберите количество:</h2>
-					<div class="flex justify-between">
-						<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
-							<span class="mb-2">30 <span class="font-normal">гр</span></span>
-							<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-							<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
-							<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-							<span class="text-gold">30 <span class="font-normal">€</span></span>
-						</label>
-						<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
-							<span class="mb-2">30 <span class="font-normal">гр</span></span>
-							<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-							<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
-							<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-							<span class="text-gold">30 <span class="font-normal">€</span></span>
-						</label>
-						<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
-							<span class="mb-2">30 <span class="font-normal">гр</span></span>
-							<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-							<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
-							<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-							<span class="text-gold">30 <span class="font-normal">€</span></span>
-						</label>
-						<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
-							<span class="mb-2">30 <span class="font-normal">гр</span></span>
-							<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-							<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
-							<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-							<span class="text-gold">30 <span class="font-normal">€</span></span>
-						</label>
+			</div>
+			<div class="card shadow-lg">
+				<div class="card-body min-w-0">
+					<!-- DESKTOP SLIDER -->
+					<div class="product-slider flex lg:flex-col-reverse gap-10 items-stretch min-w-0 mb-10 lg:hidden">
+						<div class="product-nav-slider leading-[0] basis-[90px] lg:basis-auto shrink-0 flex flex-col lg:flex-row justify-between relative ml-12 lg:ml-0 lg:mb-12 min-w-0">
+							<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+								<div class="aspect-square rounded-2xl overflow-hidden">
+									<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+								</div>
+							</div>
+							<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+								<div class="aspect-square rounded-2xl overflow-hidden">
+									<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+								</div>
+							</div>
+							<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+								<div class="aspect-square rounded-2xl overflow-hidden">
+									<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+								</div>
+							</div>
+							<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+								<div class="aspect-square rounded-2xl overflow-hidden">
+									<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+								</div>
+							</div>
+							<div class="py-2 lg:py-0 lg:px-2 h-full flex justify-center items-center">
+								<div class="aspect-square rounded-2xl overflow-hidden">
+									<img src="../assets/images/product.png" class="w-full h-full object-cover object-center" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="product-main-slider grow min-w-0">
+							<div class="w-full px-1">
+								<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+									<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+										<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+									</div>
+									<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+									<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+										<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+										<div class="absolute overflow-hidden rounded-full inset-0">
+											<img data-zoom-area-image alt="" class="absolute max-w-none">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-full px-1">
+								<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+									<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+										<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+									</div>
+									<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+									<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+										<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+										<div class="absolute overflow-hidden rounded-full inset-0">
+											<img data-zoom-area-image alt="" class="absolute max-w-none">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-full px-1">
+								<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+									<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+										<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+									</div>
+									<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+									<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+										<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+										<div class="absolute overflow-hidden rounded-full inset-0">
+											<img data-zoom-area-image alt="" class="absolute max-w-none">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-full px-1">
+								<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+									<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+										<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+									</div>
+									<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+									<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+										<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+										<div class="absolute overflow-hidden rounded-full inset-0">
+											<img data-zoom-area-image alt="" class="absolute max-w-none">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="w-full px-1">
+								<div class="rounded-2xl overflow-hidden w-full aspect-portrait lg:aspect-landscape relative" data-zoom-window data-zoom-factor="2">
+									<div class="absolute top-0 right-0 p-3 cursor-pointer group/zoom lg:hidden">
+										<img src="../assets/images/zoom.svg" class="w-full" alt="" data-zoom-button>
+									</div>
+									<img src="../assets/images/product.png" class="w-full h-full object-center object-cover" alt="" data-zoom-image>
+									<div class="absolute inset-0 w-40 h-40 rounded-full opacity-0 pointer-events-none [&.active]:opacity-100 transition" data-zoom-area>
+										<div class="absolute -inset-2 backdrop-blur-sm bg-[#FFF1] rounded-full"></div>
+										<div class="absolute overflow-hidden rounded-full inset-0">
+											<img data-zoom-area-image alt="" class="absolute max-w-none">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<select data-dropdown class="hidden lg:flex flex-row-reverse gap-2 justify-between items-center font-bold border-gold border p-4 rounded-full mb-10" data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold" >
-					<option value="30">30 грамм - 30 €</option>
-					<option value="60">60 грамм - 60 €</option>
-					<option disabled value="90">90 грамм - 90 €</option>
-				</select>
-				<div class="flex justify-between items-center mb-6 gap-8">
-					<div class="flex items-center gap-2">
-						<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
-						<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
-						<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
+					<!-- RADIO SELECT -->
+					<div class="border border-gold rounded-2xl p-6 mb-10 lg:hidden">
+						<h2 class="font-bold text-2xl font-roman text-center mb-5">Выберите количество:</h2>
+						<div class="flex justify-between">
+							<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
+								<span class="mb-2">30 <span class="font-normal">гр</span></span>
+								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+								<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
+								<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+								<span class="text-gold">30 <span class="font-normal">€</span></span>
+							</label>
+							<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
+								<span class="mb-2">30 <span class="font-normal">гр</span></span>
+								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+								<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
+								<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+								<span class="text-gold">30 <span class="font-normal">€</span></span>
+							</label>
+							<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
+								<span class="mb-2">30 <span class="font-normal">гр</span></span>
+								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+								<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
+								<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+								<span class="text-gold">30 <span class="font-normal">€</span></span>
+							</label>
+							<label class="flex items-center grow font-bold text-sm flex-col cursor-pointer relative group/radio">
+								<span class="mb-2">30 <span class="font-normal">гр</span></span>
+								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+								<span class="before:absolute before:w-full before:border-b before:border-gold relative w-full before:top-2 group-first/radio:before:w-1/2 group-first/radio:before:left-1/2 group-last/radio:before:w-1/2 group-last/radio:before:right-1/2"></span>
+								<span class="w-4 mb-2 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-1 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+								<span class="text-gold">30 <span class="font-normal">€</span></span>
+							</label>
+						</div>
 					</div>
-					<div class="flex justify-between items-center gap-8">
-						<span class="text-stone-600 lg:text-xs">Цена за баночку 30 гр</span>
-						<span class="font-bold text-3xl lg:text-xl whitespace-no-wrap">30 €</span>
-					</div>
+					<a class="justify-end items-center mb-5 group/fav hidden lg:flex">
+						<i class="fa-regular fa-heart text-gold text-3xl md:text-xl group-hover/fav:scale-125  duration-300 ease-bounce"></i>
+						<span class="font-medium ml-3 text-xl md:text-lg group-hover/fav:translate-x-1 duration-300 ease-bounce">положить в избранное</span>
+					</a>
+					<h2 class="text-gold font-roman mb-5 hidden lg:block uppercase">Выберите количество икры:</h2>
+					<select data-dropdown class="hidden lg:flex flex-row-reverse gap-2 justify-between items-center font-bold border-gold border p-4 rounded-full mb-10" data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold" >
+						<option value="30">30 грамм - 30 €</option>
+						<option value="60">60 грамм - 60 €</option>
+						<option disabled value="90">90 грамм - 90 €</option>
+					</select>
+					<div class="flex justify-between items-center mb-6 gap-8">
+						<div class="flex items-center gap-2">
+							<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
+							<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
+							<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
+						</div>
+						<div class="flex justify-between items-center gap-8">
+							<span class="text-stone-600 lg:text-xs">Цена за баночку 30 гр</span>
+							<span class="font-bold text-3xl lg:text-xl whitespace-no-wrap">30 €</span>
+						</div>
 
+					</div>
+					<a href="" class="btn block">Купить</a>
+						
 				</div>
-				<a href="" class="btn block">Купить</a>
-					
+				
 			</div>
 		</div>
 		<div class="grow">
 			
 			<div class="flex justify-start items-center gap-6 mb-5">
-				<h2 class="text-gold font-roman text-4xl uppercase">икра Чёрная классик</h2>
+				<h2 class="text-gold font-roman text-4xl md:text-2xl uppercase">икра Чёрная классик</h2>
 				<img src="../assets/images/right-decor.svg" alt="" class="w-12">
 				
 			</div>
 
 
-			<a class="flex items-center mb-5 group/fav">
-				<i class="fa-regular fa-heart text-gold text-3xl group-hover/fav:scale-125  duration-300 ease-bounce"></i>
-				<span class="font-medium ml-3 text-xl group-hover/fav:translate-x-1 duration-300 ease-bounce">положить в избранное</span>
+			<a class="flex items-center mb-5 group/fav lg:hidden">
+				<i class="fa-regular fa-heart text-gold text-3xl md:text-xl group-hover/fav:scale-125  duration-300 ease-bounce"></i>
+				<span class="font-medium ml-3 text-xl md:text-lg group-hover/fav:translate-x-1 duration-300 ease-bounce">положить в избранное</span>
 			</a>
 
 
 
 			<div class="mb-10">
-				<h2 class="font-roman text-2xl font-bold uppercase mb-2">
+				<h2 class="font-roman text-2xl md:text-lg font-bold uppercase mb-2">
 					О продукте
 				</h2>
 				<div class="text-sm">
@@ -204,32 +316,32 @@
 
 
 			<div class="mb-10">
-				<h2 class="font-roman text-xl font-bold uppercase mb-4">
+				<h2 class="font-roman text-xl md:text-lg font-bold uppercase mb-4">
 					Пищевая ценность (на 100 грамм продукта):
 				</h2>
-				<div class="flex flex-wrap gap-8">
-					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+				<div class="flex gap-8 xl:gap-2">
+					<div class="p-4 xl:px-2 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
 						<div class="flex flex-col gap-2 items-center ">
 							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
 							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
 							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+					<div class="p-4 xl:px-2 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
 						<div class="flex flex-col gap-2 items-center ">
 							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
 							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
 							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+					<div class="p-4 xl:px-2 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
 						<div class="flex flex-col gap-2 items-center ">
 							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
 							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
 							<div class="text-sm font-medium px-3 group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">28,4 г</div>
 						</div>
 					</div>
-					<div class="p-4 lg:p-3 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
+					<div class="p-4 xl:px-2 shadow-lg bg-white rounded-xl group/card hover:-translate-y-2 transition ease-out-wobble duration-200">
 						<div class="flex flex-col gap-2 items-center ">
 							<div class="text-xs bold px-3 font-bold group-hover/card:-translate-y-1  transition ease-out-wobble duration-300">Белки</div>
 							<div class="w-full border-b border-gold group-hover/card:-translate-y-0.5  transition ease-out-wobble duration-300"></div>
@@ -241,14 +353,14 @@
 
 
 			<div class="mb-10">
-				<h2 class="font-roman text-2xl font-bold uppercase mb-5">
+				<h2 class="font-roman text-2xl md:text-lg font-bold uppercase mb-5">
 					Очень нежный вкус с неповторимое послевкусие
 				</h2>
 				<div class="">
 					<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape leading-[0] inline float-left pr-8 pb-4">
 						<img src="../assets/images/product2.png" alt="" class="w-full h-full object-cover object-center rounded-3xl">
 					</div>
-					<div class="md:basis-full basis-0 grow">
+					<div class="md:basis-full basis-0 grow md:text-xs">
 						Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
 					</div>
 				</div>
@@ -256,18 +368,18 @@
 
 
 			<div class="mb-10">
-				<h2 class="font-roman text-2xl font-bold uppercase mb-5">
+				<h2 class="font-roman text-2xl md:text-lg font-bold uppercase mb-5">
 					Очень нежный вкус с неповторимое послевкусие
 				</h2>
 				<div class="flex gap-8 items-start flex-wrap">
-					<div class="basis-full">
+					<div class="basis-full md:text-xs">
 						Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
 					</div>
 					<div class="">
 						<div class="basis-[360px] md:basis-full shrink-0 aspect-landscape leading-[0] inline float-left pr-8 pb-4">
 							<img src="../assets/images/product2.png" alt="" class="w-full h-full object-cover object-center rounded-3xl">
 						</div>
-						<div class="md:basis-full basis-0 grow">
+						<div class="md:basis-full basis-0 grow md:text-xs">
 							Наша ферма была построена 30 лет назад. С целью получения черной икры без ущерба природе и восстановления популяции осетровых. Италия, сердце процветающей Ломбардии и природный парк реки Тормо с чистейшей водой, является идеальным местом для разведения рыбы. Условия, приближенные к натуральному и сбалансированному питанию, и наличие собственной лаборатории позволили нам выращивать здоровую рыбу и производить непревзойденную царскую икру.
 						</div>
 					</div>

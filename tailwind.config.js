@@ -15,7 +15,7 @@ module.exports = {
         'md': '767px',
         'lg': '1023px',
         'xl': '1279px',
-        '2xl': '1535px',
+        '2xl': '1600px',
       },
     },
     extend: {
@@ -65,7 +65,7 @@ module.exports = {
       },
     },
     screens: {
-      '2xl': { max: "1535px" },
+      '2xl': { max: "1600px" },
       'xl': { max: "1279px" },
       'lg': { max: "1023px" },
       'md': { max: "767px" },

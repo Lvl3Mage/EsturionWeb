@@ -162,6 +162,7 @@ function InitializeSliders(){
 					settings: {
 						vertical: false,
 						verticalSwiping: false,
+						arrows: false,
 					}
 				},
 				{
@@ -170,6 +171,7 @@ function InitializeSliders(){
 						vertical: false,
 						verticalSwiping: false,
 						slidesToShow: 3,
+						arrows: false,
 					}
 				},
 			]
