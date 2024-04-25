@@ -3710,9 +3710,17 @@ body{
   .md\:text-\[length\:--text-mobile-size\]{
     font-size: var(--text-mobile-size);
   }
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+  .md\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
   .md\:text-xl{
     font-size: 1.25rem;
