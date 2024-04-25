@@ -552,7 +552,13 @@ function InitializeSliders() {
     dotsClass: 'absolute top-full right-0 left-0 h-8 *:py-3 flex flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
     customPaging: function (slider, i) {
       return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
-    }
+    },
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        arrows: false
+      }
+    }]
   });
   $(".banner-slider").slick({
     slidesToShow: 1,
