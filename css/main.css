@@ -3529,6 +3529,12 @@ body{
   .xl\:static{
     position: static;
   }
+  .xl\:order-1{
+    order: 1;
+  }
+  .xl\:order-2{
+    order: 2;
+  }
   .xl\:hidden{
     display: none;
   }
