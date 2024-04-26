@@ -376,6 +376,12 @@ $(document).on("mousemove", function (e) {
   mouseCoords.x = e.pageX;
   mouseCoords.y = e.pageY;
 });
+$(document).on('selectmenuchange', function (e) {
+  var SelectMenuChange = new CustomEvent('selectmenuischanged', {
+    detail: e
+  });
+  document.dispatchEvent(SelectMenuChange);
+});
 $("[data-dropdown].product-radio").on("selectmenuchange", function (event, ui) {
   let price = ui.item.element.data('price');
   let variation_id = ui.item.element.data('variation-id');
@@ -564,6 +570,8 @@ function InitializeSliders() {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     focusOnSelect: true,
     dots: true,
     arrows: false,
@@ -591,6 +599,8 @@ function InitializeSliders() {
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     focusOnSelect: true,
     centereMode: true,
     dots: true,
@@ -599,7 +609,23 @@ function InitializeSliders() {
     customPaging: function (slider, i) {
       return `<div class="bg-gold cursor-pointer w-2 h-2 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2">
 			</div>`;
-    }
+    },
+    responsive: [{
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
   });
 }
 function EnableSliderFiltering(sliderSelector, selector) {

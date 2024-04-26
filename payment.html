@@ -224,7 +224,7 @@
 					before:absolute before:h-0.5 before:w-8 before:rounded before:top-0 before:bottom-0 before:m-auto before:bg-gray-100 before:right-full before:mr-4 -->
 <div class="container my-3">
 	<div class="flex justify-between items-start xl:flex-wrap gap-10">
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full">
+		<div class="xl:static sticky top-[100px] grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full">
 			<div class="flex gap-6 cart-slider-payment mb-16">
 				<div class="px-2 py-4">
 					<div class="card card-compact bg-white shadow-lg rounded-2xl">
@@ -255,8 +255,9 @@
 						<div class="card-body flex items-center justify-between gap-8">
 							<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
 								<div class="flex items-center md:basis-full">
-									<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
+									<div class="relative aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
 										<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
+										<img src="assets/img/product.png" alt="" class="absolute left-0 top-0 w-1/2">
 									</div>
 									<div class="text-xl md:text-base font-roman font-bold ml-10 uppercase">
 										икра Чёрная классик
@@ -336,6 +337,7 @@
 								<option value="es" >Испания</option>
 								<option value="fr" >Франция</option>
 							</select>
+							<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/input:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
 						</div>
 					</div>
 					<div class="basis-1/2 md:basis-full">
