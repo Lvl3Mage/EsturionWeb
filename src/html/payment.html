@@ -53,9 +53,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="card bg-white shadow-lg ">
+			<div class="card bg-white shadow-lg  xl:mb-[calc(200px+20px)]">
 				<div class="card-body">
-					<div class="mb-5 pb-7 border-b border-neutral-200 text-zinc-950">
+					<div class="mb-5 pb-7 border-b border-neutral-200 xl:border-none xl:pb-0 text-zinc-950">
 						<div class="flex items-center justify-between mb-5">
 							<div class="">Итого</div>
 							<div class="font-semibold">60 €</div>
@@ -70,15 +70,30 @@
 						</div>
 						
 					</div>
-					<div class="text-2xl flex items-center justify-between mb-12">
-						<div class="">Итого</div>
-						<div class="font-semibold">60 €</div>
+					<!-- Desktop Button-->
+					<div class=" xl:hidden">
+						<div class="text-2xl flex items-center justify-between mb-12">
+							<div class="">Итого</div>
+							<div class="font-semibold">60 €</div>
+						</div>
+						<a href="" class="btn block uppercase">Подтвердить заказ</a>
+						
 					</div>
-					<a href="" class="btn block uppercase">Подтвердить заказ</a>
 				</div>
 			</div>
 		</div>
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1">
+		<!-- Mobile button -->
+		<div class="hidden xl:block shadow-lg bg-white w-full card h-[200px] xl:sticky z-10 top-[calc(100vh_-_220px)]">
+			<div class="card-body flex flex-col justify-between h-full">
+				<div class="text-2xl flex items-center justify-between">
+					<div class="">Итого</div>
+					<div class="font-semibold">60 €</div>
+				</div>
+				<a href="" class="btn block uppercase">Подтвердить заказ</a>
+				
+			</div>
+		</div>
+		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1 xl:-mt-[200px]">
 			<div class="flex items-center mb-10 md:mb-3">
 				<div class="text-red-500 status-dot"></div>
 				<div class="text-zinc-950 ml-3">
@@ -105,16 +120,18 @@
 				</div>
 				<div class="flex md:flex-wrap gap-5 mb-10 md:mb-3">
 					<div class="basis-1/2 md:basis-full">
-						<div class="relative w-full group/input">
-							<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-								<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
+						<div class="group/form-element">
+							<div class="relative w-full group/input">
+								<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
+									<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
+								</div>
+								<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold">
+									<option value="" selected disabled>Страна</option>
+									<option value="es" >Испания</option>
+									<option value="fr" >Франция</option>
+								</select>
 							</div>
-							<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold">
-								<option value="" selected disabled>Страна</option>
-								<option value="es" >Испания</option>
-								<option value="fr" >Франция</option>
-							</select>
-							<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/input:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
+							<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/form-element:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
 						</div>
 					</div>
 					<div class="basis-1/2 md:basis-full">
