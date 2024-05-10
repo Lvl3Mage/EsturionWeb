@@ -97,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="text-white h-[50px] border-b-2 border-white/25 backdrop-blur-xl bg-black/20">
+		<div class="text-white h-[50px] border-b-2 md:hidden border-white/25 backdrop-blur-xl bg-black/20">
 			<div class="container h-full">
 				<div class="h-full flex gap-4 font-roman overflow-auto items-center justify-between">
 					<a class="font-bold hover-pulse">
@@ -142,7 +142,7 @@
 					<img src="assets/img/logo.svg" alt="" class="w-[5%] min-w-[50px] mb-2">
 					<img src="assets/img/logo-text.svg" alt="" class="w-[25%] min-w-[200px] hidden md:block">
 				</div>
-				<ul class="flex flex-col gap-3 items-start md:items-center text-2xl md:text-sm font-bold font-roman py-5">
+				<ul class="flex flex-col gap-3 md:gap-8 items-start md:items-center text-2xl md:text-sm font-bold font-roman py-5">
 					<li class="group/menu-item">
 						<a href="" class="group-hover/menu-item:translate-x-2 md:group-hover/menu-item:translate-x-0 md:group-hover/menu-item:translate-scale-1.2 duration-300 group-hover/menu-item:scale-110 transition block ease-out-wobble">Hello</a>
 					</li>
@@ -162,13 +162,22 @@
 				<div class="sm:flex sm:flex-col justify-center gap-6 items-start md:items-start text-2xl pb-8 border-t border-gold pt-5">
 					<div class="flex flex-col gap-4 font-normal text-base items-start">
 						<a class="font-normal flex items-start gap-2">
-							<i class="fa-solid fa-phone text-xl text-gold"></i>
+							<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+							<path d="M15.9995 12.2304V14.4885C16.0004 14.6981 15.9574 14.9056 15.8732 15.0977C15.7891 15.2898 15.6657 15.4622 15.5109 15.6039C15.3561 15.7456 15.1734 15.8535 14.9744 15.9207C14.7754 15.9878 14.5646 16.0128 14.3554 15.9939C12.0346 15.7422 9.80532 14.9508 7.84668 13.6831C6.02441 12.5274 4.47945 10.9855 3.3215 9.16689C2.0469 7.20324 1.25368 4.96756 1.00612 2.64096C0.987275 2.43282 1.01206 2.22303 1.0789 2.02497C1.14574 1.82691 1.25317 1.6449 1.39436 1.49055C1.53554 1.33619 1.70738 1.21287 1.89893 1.12843C2.09049 1.04398 2.29756 1.00027 2.50697 1.00007H4.76956C5.13558 0.996478 5.49041 1.12583 5.76793 1.36403C6.04546 1.60222 6.22672 1.93301 6.27795 2.29472C6.37345 3.01736 6.55055 3.72691 6.80589 4.40981C6.90736 4.67922 6.92932 4.97202 6.86917 5.2535C6.80902 5.53498 6.66928 5.79336 6.4665 5.99801L5.50867 6.95394C6.58231 8.83837 8.14568 10.3986 10.0338 11.4702L10.9917 10.5142C11.1967 10.3118 11.4556 10.1724 11.7377 10.1123C12.0197 10.0523 12.3131 10.0742 12.583 10.1755C13.2673 10.4303 13.9782 10.6071 14.7023 10.7024C15.0687 10.754 15.4033 10.9381 15.6424 11.2199C15.8816 11.5016 16.0087 11.8612 15.9995 12.2304Z" stroke="#D3B096" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
 							<span class="">
 								+34 635 567 596
 							</span>
 						</a>
 						<div class="font-normal flex items-start gap-2">
-							<i class="fa-regular fa-clock text-xl text-gold"></i>
+							<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="Group 173">
+							<path id="Vector" d="M9.43037 18.2719C14.0863 18.2719 17.8607 14.4975 17.8607 9.8415C17.8607 5.18554 14.0863 1.41113 9.43037 1.41113C4.77441 1.41113 1 5.18554 1 9.8415C1 14.4975 4.77441 18.2719 9.43037 18.2719Z" stroke="#D3B096" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+							<path id="Vector_2" d="M9 6V10.1412L10.7748 12.2119" stroke="#D3B096" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							</svg>
+
 							<span class="">
 								 с 9 до 18 (GMT+2) по будням
 							</span>
@@ -249,9 +258,9 @@
 	<!-- Heading -->
 	<div class="flex justify-between items-center flex-wrap mb-7">
 		<div class="mb-5">
-			<h2 class="text-gold font-roman text-4xl md:text-2xl uppercase">
+			<h2 class="title uppercase">
 				икра Чёрная классик
-				<img src="assets/img/right-decor.svg" alt="" class="inline-block h-[0.6em] mb-[0.2em] pl-2">
+				<img src="assets/img/right-decor.svg" alt="" class="inline-block h-[0.5em] mb-[0.25em] pl-2">
 			</h2>
 			
 			
@@ -265,7 +274,7 @@
 	<div class="flex justify-center items-center mb-16 py-4 text-gray-600 text-lg">
 		<span>Ваша корзина пуста.</span>
 	</div>
-	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16">
+	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16 md:pb-6 md:mb-6">
 		<div class="px-2 py-4">
 			<div class="card card-compact bg-white shadow-lg rounded-2xl">
 				<div class="card-body flex items-center justify-between gap-8">
@@ -276,7 +285,7 @@
 							</div>
 							<div class="ml-10 uppercase md:flex md:flex-col md:justify-between">
 								<span class="text-xl md:text-sm font-roman font-bold ">икра Чёрная классик</span>
-								<div class="text-xs whitespace-nowrap mt-5"><span class="font-medium">30</span> гр</div>
+								<div class="text-xs whitespace-nowrap mt-5 hidden md:block"><span class="font-medium">30</span> гр</div>
 							</div>
 						</div>
 						<div class="text-xl whitespace-nowrap md:hidden"><span class="font-medium">30</span> гр</div>

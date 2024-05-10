@@ -1013,8 +1013,8 @@ body{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 @media (min-width: 639px){
   .container{
@@ -1040,6 +1040,12 @@ body{
   .container{
     max-width: 1600px;
   }
+}
+p{
+  text-align: justify;
+}
+.def-text{
+  text-align: justify;
 }
 @media (max-width: 767px){
   .def-text{
@@ -1213,6 +1219,11 @@ body{
 .wpcf7 .form-control::placeholder{
   opacity: 0.9;
 }
+@media (max-width: 767px){
+  .wpcf7 .form-control{
+    padding: 1rem;
+  }
+}
 .wpcf7 .form-control{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
@@ -1259,6 +1270,34 @@ body{
   margin-bottom: 0.25rem;
   width: 100%;
   border-radius: 9999px !important;
+}
+h1.title{
+  font-family: Times New Roman, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(211 176 150 / var(--tw-text-opacity));
+}
+@media (max-width: 767px){
+  h1.title{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+h2.title{
+  font-family: Times New Roman, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(211 176 150 / var(--tw-text-opacity));
+}
+@media (max-width: 767px){
+  h2.title{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 .card{
   overflow: hidden;
@@ -1518,6 +1557,11 @@ body{
 .form-input::placeholder{
   opacity: 0.9;
 }
+@media (max-width: 767px){
+  .form-input{
+    padding: 1rem;
+  }
+}
 .form-input{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
@@ -1720,6 +1764,9 @@ body{
 .top-\[85\%\]{
   top: 85%;
 }
+.top-\[calc\(100vh_-_220px\)\]{
+  top: calc(100vh - 220px);
+}
 .top-full{
   top: 100%;
 }
@@ -1807,6 +1854,9 @@ body{
 .mb-8{
   margin-bottom: 2rem;
 }
+.mb-\[0\.25em\]{
+  margin-bottom: 0.25em;
+}
 .mb-\[0\.2em\]{
   margin-bottom: 0.2em;
 }
@@ -1885,9 +1935,6 @@ body{
 .hidden{
   display: none;
 }
-.aspect-\[7\/10\]{
-  aspect-ratio: 7/10;
-}
 .aspect-landscape{
   aspect-ratio: 3 / 2;
 }
@@ -1927,8 +1974,14 @@ body{
 .h-8{
   height: 2rem;
 }
+.h-\[0\.5em\]{
+  height: 0.5em;
+}
 .h-\[0\.6em\]{
   height: 0.6em;
+}
+.h-\[200px\]{
+  height: 200px;
 }
 .h-\[20px\]{
   height: 20px;
@@ -1960,9 +2013,6 @@ body{
 }
 .max-h-\[400px\]{
   max-height: 400px;
-}
-.min-h-\[3em\]{
-  min-height: 3em;
 }
 .w-0{
   width: 0px;
@@ -3254,10 +3304,10 @@ body{
 .group\/form.hide-errors .group-\[\&\.hide-errors\]\/form\:hidden{
   display: none;
 }
-.group\/input[\:not-has\(\:invalid\)] .group-\[\&\:not\(\:has\(\:invalid\)\)\]\/input\:hidden{
+.group\/form-element[\:not-has\(\:invalid\)] .group-\[\&\:not\(\:has\(\:invalid\)\)\]\/form-element\:hidden{
   display: none;
 }
-.group\/input:not(:has(:invalid)) .group-\[\&\:not\(\:has\(\:invalid\)\)\]\/input\:hidden{
+.group\/form-element:not(:has(:invalid)) .group-\[\&\:not\(\:has\(\:invalid\)\)\]\/form-element\:hidden{
   display: none;
 }
 .group\/input[\:not-has\(\:required\)] .group-\[\&\:not\(\:has\(\:required\)\)\]\/input\:hidden{
@@ -3323,11 +3373,23 @@ body{
   .xl\:static{
     position: static;
   }
+  .xl\:sticky{
+    position: sticky;
+  }
   .xl\:order-1{
     order: 1;
   }
   .xl\:order-2{
     order: 2;
+  }
+  .xl\:-mt-\[200px\]{
+    margin-top: -200px;
+  }
+  .xl\:mb-\[calc\(200px\+20px\)\]{
+    margin-bottom: calc(200px + 20px);
+  }
+  .xl\:block{
+    display: block;
   }
   .xl\:hidden{
     display: none;
@@ -3344,9 +3406,15 @@ body{
   .xl\:gap-2{
     gap: 0.5rem;
   }
+  .xl\:border-none{
+    border-style: none;
+  }
   .xl\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .xl\:pb-0{
+    padding-bottom: 0px;
   }
 }
 @media (max-width: 1023px){
@@ -3550,6 +3618,9 @@ body{
   .md\:justify-between{
     justify-content: space-between;
   }
+  .md\:gap-8{
+    gap: 2rem;
+  }
   .md\:gap-y-8{
     row-gap: 2rem;
   }
@@ -3666,9 +3737,6 @@ body{
   }
   .sm\:pb-\[60px\]{
     padding-bottom: 60px;
-  }
-  .sm\:text-center{
-    text-align: center;
   }
 }
 .\[\&\.active\]\:pointer-events-auto.active{
