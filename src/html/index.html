@@ -3,11 +3,11 @@
 	<img src="../assets/images/cart.svg" class="w-full pr-1" alt="">
 	<div class="absolute bg-gold aspect-square w-5 text-xs rounded-full -top-1 -right-1 text-white flex justify-center items-center group-hover/cart:rotate-[18deg] origin-bottom-left transition ease-out-wobble duration-300">1</div>
 </a>
-<div class="banner-mask relative -mt-[50px]">
-	<img src="../assets/images/banner-mask.svg" alt="" class="w-full opacity-0 pointer-events-none md:hidden">
-	<img src="../assets/images/banner-mask-mobile.svg" alt="" class="w-full  pointer-events-none hidden md:block">
-	<div class="absolute inset-0 overflow-hidden">
-		<div class="banner-slider def-slider def-slider--full-h h-full z-10 relative">
+<div class="overflow-hidden relative -mt-[50px] md:-mt-[80px]">
+	<!-- <img src="../assets/images/banner-mask.svg" alt="" class="w-full opacity-0 pointer-events-none md:hidden">
+	<img src="../assets/images/banner-mask-mobile.svg" alt="" class="w-full  pointer-events-none hidden md:block"> -->
+	<div class="w-full aspect-landscape md:aspect-square overflow-hidden relative">
+		<div class="banner-slider def-slider def-slider--full-h h-full z-10 relative sm:pb-[60px]">
 			<div class="h-full relative">
 				<div class="absolute inset-0 text-white z-10 mt-[50px]">
 					<div class="container h-full">
@@ -53,7 +53,7 @@
 						
 					</div>
 				</div>
-				<div class="desktop md:hidden h-full">
+				<div class="desktop md:hidden h-full select-none">
 					<img src="../assets/images/banner.png" alt="" class="w-full h-full object-cover object-center">
 				</div>
 				<div class="mobile md:block hidden h-full">
@@ -79,33 +79,7 @@
 						
 					</div>
 				</div>
-				<div class="desktop md:hidden h-full">
-					<img src="../assets/images/banner.png" alt="" class="w-full h-full object-cover object-center">
-				</div>
-				<div class="mobile md:block hidden h-full">
-					<img src="../assets/images/banner.png" alt="" class="w-full h-full object-cover object-center">
-				</div>
-			</div>
-			<div class="h-full relative">
-				<div class="absolute inset-0 text-white z-10 mt-[50px]">
-					<div class="container h-full">
-						<div class="flex flex-col justify-center items-start h-full">
-							
-							<div class="text-[length:--text-size] lg:text-[length:calc((var(--text-size)_+_var(--text-mobile-size))/2)] md:text-[length:--text-mobile-size] text-[color:--text-color] mt-[length:--margin-top] font-[number:--text-weight] font-roman"> 
-								<!-- font-montserrat -->
-								Премиум коллекция
-							</div>
-							<div class="text-[length:--text-size] md:text-[length:--text-mobile-size] text-[color:--text-color] mt-[length:--margin-top] font-[number:--text-weight] font-roman"> 
-								<!-- font-montserrat -->
-								Премиум коллекция
-							</div>
-							<a href="" class="block text-[length:--text-size] md:text-[length:--text-mobile-size] text-[color:--text-color] mt-[length:--margin-top] font-[number:--text-weight] border-2 border-[color:--color-outline] px-4 py-2 rounded-full bg-[color:--color-bg] hover:bg-[color:--color-bg-hover] transition hover:text-[color:--color-hover] font-roman">Button</a>
-							
-						</div>
-						
-					</div>
-				</div>
-				<div class="desktop md:hidden h-full">
+				<div class="desktop md:hidden h-full select-none">
 					<img src="../assets/images/banner.png" alt="" class="w-full h-full object-cover object-center">
 				</div>
 				<div class="mobile md:block hidden h-full">
@@ -113,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sm:hidden absolute top-[75%] md:top-[80%] left-0 right-0 m-auto w-[80%] aspect-square rounded-full border-2 border-white z-20">
+		<div class="sm:hidden absolute top-[75%] left-0 right-0 m-auto w-[80%] aspect-square rounded-full border-2 border-white z-20">
 			<div class="absolute top-0 bottom-0 left-[45%] w-[10%] rotate-[var(--angle)]">
 				<div class="absolute top-0 left-1/2">
 					<div class="bg-white rounded-full w-5 h-5 -translate-x-1/2 -translate-y-1/2"></div>
@@ -147,7 +121,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sm:hidden absolute top-[85%] md:top-[90%] left-0 right-0 m-auto w-[70%] md:w-[60%] aspect-square rounded-full border-2 border-white animate-spin-slow pointer-events-none z-20">
+		<div class="sm:hidden absolute top-[85%] left-0 right-0 m-auto w-[70%] md:w-[60%] aspect-square rounded-full border-2 border-white animate-spin-slow pointer-events-none z-20">
 			<div class="absolute inset-0 rotate-90">
 				<div class="absolute -top-[4%] left-[45%] w-[10%]">
 					<img src="../assets/images/fish-decor.svg" alt="" class="w-full">
@@ -167,9 +141,25 @@
 				<img src="../assets/images/fish-decor.svg" alt="" class="w-full">
 			</div>
 		</div>
-	</div>
-	<div class="absolute inset-0 pointer-events-none">
-		<img src="../assets/images/banner-mask-decor.svg" alt="" class="absolute bottom-0 w-full">
+
+		<div class="absolute inset-0 -bottom-1 sm:bottom-[55px] z-10 pointer-events-none">
+			<div class="absolute z-10 bottom-0 w-full md:hidden">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.5 5.61333 1920 154.4" class="w-full">
+					<path d="M 1920.5 42 C 1473.1 -39.87 1233.9 42 960.5 42 C 683.9 42 420.1 -39.87 0.5 42 C 0.5 60 0.5 160 0.5 160 H 1920.5 C 1920.5 60 1920.5 60 1920.5 42 Z" fill="#fff"/>
+				</svg>
+				<img src="../assets/images/banner-mask-decor.svg" alt="" class="absolute -top-1 w-full">
+				
+			</div>
+			<div class="absolute z-10 bottom-0 w-full hidden md:block">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 37">
+					<path d="M375 0C287.617 16.6439 240.898 0 187.5 0C133.477 0 81.9531 16.6439 0 0C0 20.6825 0 37 0 37H375C375 37 375 17.419 375 0Z" fill="#fff"/>
+				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 375 8" class="absolute -top-1 sm:-top-0.5 w-full">
+					<path d="M0 1.10827C86.1104 18.8647 131.411 1.10827 187.354 1.10827C243.296 1.10827 285.57 18.8647 375 1" stroke="#D3B096" stroke-width="1.3" fill="none"/>
+				</svg>
+			</div>
+		</div>
+		
 	</div>
 </div>
 <div class="hidden sm:block border-t border-gold border-b py-2 my-2 mt-5">

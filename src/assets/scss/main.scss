@@ -298,15 +298,15 @@
 	}
 
 }
-.banner-mask{
-	mask: url(../images/banner-mask.svg) exclude;
-	@media screen and (max-width:767px) {
-		mask: url(../images/banner-mask-mobile.svg) exclude;
-	}
-	mask-size: contain;
-	mask-repeat: no-repeat;
-	mask-position: bottom;
-}
+// .banner-mask{
+// 	mask: url(../images/banner-mask.svg) exclude;
+// 	@media screen and (max-width:767px) {
+// 		mask: url(../images/banner-mask-mobile.svg) exclude;
+// 	}
+// 	mask-size: contain;
+// 	mask-repeat: no-repeat;
+// 	mask-position: bottom;
+// }
 
 @tailwind base;
 @tailwind components;

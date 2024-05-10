@@ -266,9 +266,9 @@ function InitializeSliders(){
 				</svg>
 			</div>
 		</button>`,
-		dotsClass: 'absolute top-[70px] right-0 left-0 h-8 *:p-3 flex justify-center gap-2 *:[&.slick-active]:*:outline-white *:hover:*:brightness-90 *:rounded-full overflow-hidden',
+		dotsClass: 'absolute top-[70px] sm:top-[calc(100%_-_60px)] right-0 left-0 h-8 *:p-3 flex justify-center gap-2 *:[&.slick-active]:*:outline-white sm:*:[&.slick-active]:*:outline-gold *:hover:*:brightness-90 *:rounded-full overflow-hidden',
 		customPaging : function(slider, i) {
-			return `<div class="bg-white cursor-pointer w-2 h-2 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2">
+			return `<div class="bg-white sm:bg-gold cursor-pointer w-2 h-2 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2">
 			</div>`;
 		},
 	});
