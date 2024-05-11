@@ -154,7 +154,7 @@ function InitializeSliders(){
 			verticalSwiping: true,
 			focusOnSelect: true,
 			dots: true,
-			dotsClass: 'absolute right-full lg:top-full lg:bottom-auto lg:right-0 lg:left-0  mr-7 lg:mr-0 w-8 lg:w-full lg:h-8 *:px-3 lg:*:px-0 lg:*:py-3 top-0 bottom-0 flex flex-col lg:flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
+			dotsClass: 'absolute right-full lg:top-full lg:bottom-auto lg:right-0 lg:left-0  mr-7 lg:mr-0 w-8 lg:w-full lg:h-7 *:px-3 lg:*:px-0 lg:*:py-3 top-0 bottom-0 flex flex-col lg:flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
 			customPaging : function(slider, i) {
 				return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
 			},
@@ -230,7 +230,7 @@ function InitializeSliders(){
 		arrows:true,
 		prevArrow: '<button type="button" class="slick-prev text-4xl text-gold aria-disabled:text-gray-300"><i class="fa-solid fa-chevron-left"></i></button>',
 		nextArrow: '<button type="button" class="slick-next text-4xl text-gold aria-disabled:text-gray-300"><i class="fa-solid fa-chevron-right"></i></button>',
-		dotsClass: 'absolute top-full right-0 left-0 h-8 *:py-3 flex flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
+		dotsClass: 'absolute top-full right-0 left-0 h-8 lg:h-7 *:py-3 flex flex-row *:grow *:[&.slick-active]:*:bg-gold *:bg-gray-200 *:cursor-pointer *:hover:*:brightness-90 *:bg-clip-content rounded-full overflow-hidden',
 		customPaging : function(slider, i) {
 			return `<div class="bg-gray-200 cursor-pointer w-full h-full transition duration-300 ease-out-wobble rounded-full "></div>`;
 		},

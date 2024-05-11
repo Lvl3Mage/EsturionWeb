@@ -5,23 +5,18 @@
 			<div class="flex gap-6 cart-slider-payment mb-16">
 				<div class="px-2 py-4">
 					<div class="card card-compact bg-white shadow-lg rounded-2xl">
-						<div class="card-body flex items-center justify-between gap-8">
-							<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
+						<div class="card-body flex items-center justify-between gap-8 md:gap-4">
+							<div class="flex justify-between items-center gap-6 grow sm:justify-around">
 								<div class="flex items-center md:basis-full">
 									<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
 										<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover">
 									</div>
-									<div class="text-xl md:text-base font-roman font-bold ml-10 uppercase">
+									<div class="text-xl md:text-xs font-roman font-bold ml-10 uppercase">
 										икра Чёрная классик
 									</div>
 								</div>
-								<div class="text-xl whitespace-nowrap"><span class="font-medium">30</span> гр</div>
-								<div class="flex items-center gap-2">
-									<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
-									<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
-									<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
-								</div>
-								<div class="text-3xl font-semibold whitespace-nowrap">30 €</div>
+								<div class="text-xl md:text-xs whitespace-nowrap">1 X</div>
+								<div class="text-3xl md:text-lg font-semibold whitespace-nowrap">30 €</div>
 								
 							</div>
 						</div>
@@ -29,32 +24,26 @@
 				</div>
 				<div class="px-2 py-4">
 					<div class="card card-compact bg-white shadow-lg rounded-2xl">
-						<div class="card-body flex items-center justify-between gap-8">
-							<div class="flex justify-between items-center gap-6 md:flex-wrap grow sm:justify-around">
+						<div class="card-body flex items-center justify-between gap-8 md:gap-4">
+							<div class="flex justify-between items-center gap-6 grow sm:justify-around">
 								<div class="flex items-center md:basis-full">
-									<div class="relative aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
+									<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
 										<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover">
-										<img src="../assets/images/product.png" alt="" class="absolute left-0 top-0 w-1/2">
 									</div>
-									<div class="text-xl md:text-base font-roman font-bold ml-10 uppercase">
+									<div class="text-xl md:text-xs font-roman font-bold ml-10 uppercase">
 										икра Чёрная классик
 									</div>
 								</div>
-								<div class="text-xl whitespace-nowrap "><span class="font-medium">30</span> гр</div>
-								<div class="flex items-center gap-2">
-									<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
-									<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
-									<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
-								</div>
-								<div class="text-3xl font-semibold whitespace-nowrap">30 €</div>
+								<div class="text-xl md:text-xs whitespace-nowrap">1 X</div>
+								<div class="text-3xl md:text-lg font-semibold whitespace-nowrap">30 €</div>
 								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="card bg-white shadow-lg  xl:mb-[calc(200px+20px)]">
-				<div class="card-body">
+			<div class="card bg-white xl:bg-transparent shadow-lg xl:shadow-none xl:mb-[calc(200px+20px)]">
+				<div class="card-body xl:p-0">
 					<div class="mb-5 pb-7 border-b border-neutral-200 xl:border-none xl:pb-0 text-zinc-950">
 						<div class="flex items-center justify-between mb-5">
 							<div class="">Итого</div>
@@ -93,102 +82,108 @@
 				
 			</div>
 		</div>
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1 xl:-mt-[200px]">
-			<div class="flex items-center mb-10 md:mb-3">
-				<div class="text-red-500 status-dot"></div>
-				<div class="text-zinc-950 ml-3">
-					Поля обязательны для заполнения
-				</div>
-			</div>
-			<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
-				<div class="text-gold text-2xl font-roman mb-3">
-					Телефон для связи
-				</div>
-				<div class="text-zinc-950 mb-5">
-					(Укажите местный номер той страны, куда осуществляется доставка. Местные курьеры не всегда звонят на другие номера)
-				</div>
-				<div class="relative w-full group/input">
-					<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-						<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
-					</div>
-					<input required type="text" placeholder="Телефон" class="w-full form-input">
-				</div>
-			</div>
-			<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
-				<div class="text-gold text-2xl font-roman mb-7">
-					Доставка
-				</div>
-				<div class="flex md:flex-wrap gap-5 mb-10 md:mb-3">
-					<div class="basis-1/2 md:basis-full">
-						<div class="group/form-element">
-							<div class="relative w-full group/input">
-								<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-									<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
-								</div>
-								<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold">
-									<option value="" selected disabled>Страна</option>
-									<option value="es" >Испания</option>
-									<option value="fr" >Франция</option>
-								</select>
-							</div>
-							<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/form-element:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
+		<!-- add class hide-errors -->
+		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1 xl:-mt-[200px] group/form"> 
+			<div class="xl:card xl:bg-white xl:shadow-lg">
+				<div class="xl:card-body">
+					
+					<div class="flex items-center mb-10 md:mb-3">
+						<div class="text-red-500 status-dot"></div>
+						<div class="text-zinc-950 ml-3">
+							Поля обязательны для заполнения
 						</div>
 					</div>
-					<div class="basis-1/2 md:basis-full">
+					<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
+						<div class="text-gold text-2xl font-roman mb-3">
+							Телефон для связи
+						</div>
+						<div class="text-zinc-950 mb-5">
+							(Укажите местный номер той страны, куда осуществляется доставка. Местные курьеры не всегда звонят на другие номера)
+						</div>
 						<div class="relative w-full group/input">
-							<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
+							<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden group-[&.hide-errors]/form:hidden">
 								<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
 							</div>
 							<input required type="text" placeholder="Телефон" class="w-full form-input">
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
-				<div class="text-gold text-2xl font-roman mb-7">
-					Доставка
-				</div>
-				<div class="flex justify-between">
-					<div class="flex flex-col justify-between gap-4">
-						<label class="flex items-center gap-4 cursor-pointer group/radio">
-							<span class="flex items-center">
-								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-								<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-								
-							</span>
-							<span class="flex flex-col ">
-								<span class="font-medium text-lg">Через PayPal</span>
-								<span class="text-sm">При выборе PayPal +3% скидка</span>
-							</span>
-						</label>
-						<label class="flex items-center gap-4 cursor-pointer group/radio">
-							<span class="flex items-center">
-								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-								<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-								
-							</span>
-							<span class="flex flex-col ">
-								<span class="font-medium text-lg">Через PayPal</span>
-								<span class="text-sm">При выборе PayPal +3% скидка</span>
-							</span>
-						</label>
-						<label class="flex items-center gap-4 cursor-pointer group/radio">
-							<span class="flex items-center">
-								<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-								<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-								
-							</span>
-							<span class="flex flex-col ">
-								<span class="font-medium text-lg">Через PayPal</span>
-								<span class="text-sm">При выборе PayPal +3% скидка</span>
-							</span>
-						</label>
-						
+					<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
+						<div class="text-gold text-2xl font-roman mb-7">
+							Доставка
+						</div>
+						<div class="flex md:flex-wrap gap-5 mb-10 md:mb-3">
+							<div class="basis-1/2 md:basis-full">
+								<div class="group/form-element">
+									<div class="relative w-full group/input">
+										<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden group-[&.hide-errors]/form:hidden">
+											<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
+										</div>
+										<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold">
+											<option value="" selected disabled>Страна</option>
+											<option value="es" >Испания</option>
+											<option value="fr" >Франция</option>
+										</select>
+									</div>
+									<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/form-element:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
+								</div>
+							</div>
+							<div class="basis-1/2 md:basis-full">
+								<div class="relative w-full group/input">
+									<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden group-[&.hide-errors]/form:hidden">
+										<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
+									</div>
+									<input required type="text" placeholder="Телефон" class="w-full form-input">
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="text-lg font-bold">
-						1212
+					<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
+						<div class="text-gold text-2xl font-roman mb-7">
+							Доставка
+						</div>
+						<div class="flex justify-between">
+							<div class="flex flex-col justify-between gap-4">
+								<label class="flex items-center gap-4 cursor-pointer group/radio">
+									<span class="flex items-center">
+										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+										
+									</span>
+									<span class="flex flex-col ">
+										<span class="font-medium text-lg">Через PayPal</span>
+										<span class="text-sm">При выборе PayPal +3% скидка</span>
+									</span>
+								</label>
+								<label class="flex items-center gap-4 cursor-pointer group/radio">
+									<span class="flex items-center">
+										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+										
+									</span>
+									<span class="flex flex-col ">
+										<span class="font-medium text-lg">Через PayPal</span>
+										<span class="text-sm">При выборе PayPal +3% скидка</span>
+									</span>
+								</label>
+								<label class="flex items-center gap-4 cursor-pointer group/radio">
+									<span class="flex items-center">
+										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
+										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
+										
+									</span>
+									<span class="flex flex-col ">
+										<span class="font-medium text-lg">Через PayPal</span>
+										<span class="text-sm">При выборе PayPal +3% скидка</span>
+									</span>
+								</label>
+								
+							</div>
+							<div class="text-lg font-bold">
+								1212
+							</div>
+							
+						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
