@@ -203,6 +203,11 @@
 			@apply p-4 md:p-4;
 		}
 	}
+	.card-compact-xs{
+		.card-body{
+			@apply p-2 md:p-2;
+		}
+	}
 	.card-side {
 		@apply flex-row;
 	}
