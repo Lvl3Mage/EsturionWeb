@@ -34,8 +34,8 @@
 					</div>
 
 					<div class="font-bold cursor-pointer hover:text-gold transition md:hidden" data-modal-trigger data-modal-id="country-modal">Un pais</div>
-					<div class="flex-0 flex items-center justify-between">
-						<div class="flex items-center text-xl gap-5 sm:gap-3">
+					<div class="flex-0 flex items-center justify-between sm:ml-auto">
+						<div class="flex items-center text-xl gap-5 sm:gap-4 ">
 							<a class="hover-pulse ">
 								<svg  class="fill-blue md:fill-gold" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g>
@@ -61,12 +61,18 @@
 									Личный кабинет
 								</span>
 							</a>
+							<a class="hover-pulse text-sm flex gap-2">
+								<svg class="stroke-blue md:stroke-gold" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path d="M1.72727 11.9091H16.2727M1.72727 6.09091H16.2727M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17ZM9 17C11.1818 17 11.9091 13.3636 11.9091 9C11.9091 4.63636 11.1818 1 9 1C6.81818 1 6.09091 4.63636 6.09091 9C6.09091 13.3636 6.81818 17 9 17Z" stroke-width="1.3"/>
+								</svg>
+								<span class="text-blue md:text-gold underline md:hidden">
+									Личный кабинет
+								</span>
+							</a>
 							<div class="text-base md:text-gold flex items-center group/languages cursor-pointer rounded-md border-b-4 border-transparent pt-1" tabindex="-1">
 								<div class="pr-1 relative flex items-center">
-									<svg class="stroke-blue md:stroke-gold" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-										<path d="M1.72727 11.9091H16.2727M1.72727 6.09091H16.2727M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17ZM9 17C11.1818 17 11.9091 13.3636 11.9091 9C11.9091 4.63636 11.1818 1 9 1C6.81818 1 6.09091 4.63636 6.09091 9C6.09091 13.3636 6.81818 17 9 17Z" stroke-width="1.3"/>
-									</svg>
-									<span class="ml-2">
+									
+									<span class="">
 										BR
 									</span>
 									<div class="opacity-0 group-hover/languages:opacity-100 group-hover/languages:pointer-events-auto pointer-events-none transition-all top-full shadow-md absolute -left-1  h-auto flex flex-col justify-center z-50 bg-whtie  border rounded-md">
@@ -89,10 +95,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="burger group/burger relative h-[20px] w-[30px] flex-col justify-between flex cursor-pointer" data-mobile-menu-trigger>
-						<div class="bg-blue h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(10px_-_1px)] group-[.active]/burger:rotate-[135deg]"></div>
+					<div class="burger group/burger relative h-[16px] w-[20px] flex-col justify-between flex cursor-pointer" data-mobile-menu-trigger>
+						<div class="bg-blue h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(8px_-_1px)] group-[.active]/burger:rotate-[135deg]"></div>
 						<div class="bg-blue h-[2px] w-full transition duration-300 rounded-sm ease-in-out group-[.active]/burger:opacity-0"></div>
-						<div class="bg-blue h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[-3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(-10px_+_1px)] group-[.active]/burger:rotate-[-135deg]"></div>
+						<div class="bg-blue h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[-3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(-8px_+_1px)] group-[.active]/burger:rotate-[-135deg]"></div>
 					</div>
 				</div>
 			</div>
@@ -131,10 +137,10 @@
 	<div id="mob-menu" class="fixed left-full md:left-0 max-w-2xl md:max-w-full  top-0 md:top-full h-full md:h-[calc(100%_-_60px)] bg-white w-1/2 md:w-full [&.active]:-translate-x-full md:[&.active]:translate-x-0 z-40 md:[&.active]:-translate-y-full transition duration-500 ease-in-out overflow-y-auto pt-4 shadow-xl">
 		<div class="flex h-full">
 			<div class="px-6 flex justify-center items-center h-full md:hidden">
-				<div class="burger group/burger relative h-[20px] w-[30px] flex-col justify-between flex cursor-pointer" data-mobile-menu-trigger>
-					<div class="bg-gold h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(10px_-_1px)] group-[.active]/burger:rotate-[135deg]"></div>
+				<div class="burger group/burger relative h-[16px] w-[20px] flex-col justify-between flex cursor-pointer" data-mobile-menu-trigger>
+					<div class="bg-gold h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(8px_-_1px)] group-[.active]/burger:rotate-[135deg]"></div>
 					<div class="bg-gold h-[2px] w-full transition duration-300 rounded-sm ease-in-out group-[.active]/burger:opacity-0"></div>
-					<div class="bg-gold h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[-3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(-10px_+_1px)] group-[.active]/burger:rotate-[-135deg]"></div>
+					<div class="bg-gold h-[2px] w-full transition duration-300 rounded-sm ease-out-wobble group-[:not(.active):hover]/burger:translate-y-[-3px] group-[.active:hover]/burger:scale-x-75 group-[.active]/burger:translate-y-[calc(-8px_+_1px)] group-[.active]/burger:rotate-[-135deg]"></div>
 				</div>
 			</div>
 			<div class="px-6 h-full overflow-auto grow">

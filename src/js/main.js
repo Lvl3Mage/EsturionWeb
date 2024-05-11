@@ -247,9 +247,11 @@ function InitializeSliders(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplay: false,
+		autoplaySpeed: 4000,
 		focusOnSelect: true,
+		fade: true,
+		cssEase: 'linear',
 		dots: true,
 		arrows:false,
 		prevArrow: `<button type="button" class="slick-prev text-4xl top-0 bottom-0 m-auto text-white aria-disabled:text-gray-300 absolute left-3 z-10">
@@ -271,6 +273,20 @@ function InitializeSliders(){
 			return `<div class="bg-white sm:bg-gold cursor-pointer w-2 h-2 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2">
 			</div>`;
 		},
+
+		asNavFor: '.banner-aux-slider',
+	});
+
+	$(".banner-aux-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		autoplay: false,
+		arrows: false,
+		dots: false,
+		fade: true,
+		cssEase: 'linear',
+		asNavFor: '.banner-slider',
 	});
 
 	$(".item-slider").slick({
