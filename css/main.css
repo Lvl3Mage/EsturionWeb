@@ -1257,6 +1257,10 @@ p{
   outline-width: 1px;
   outline-color: #ef4444;
 }
+.group\/form.hide-errors .wpcf7 .form-control{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .wpcf7 .form-control{
   width: 100% !important;
   border-radius: 9999px !important;
@@ -1603,6 +1607,10 @@ h2.title{
   outline-width: 1px;
   outline-color: #ef4444;
 }
+.group\/form.hide-errors .form-input{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .status-dot{
   position: relative;
   height: 5px;
@@ -1733,8 +1741,8 @@ h2.title{
 .right-0{
   right: 0px;
 }
-.right-12{
-  right: 3rem;
+.right-2{
+  right: 0.5rem;
 }
 .right-3{
   right: 0.75rem;
@@ -1742,11 +1750,17 @@ h2.title{
 .right-3\.5{
   right: 0.875rem;
 }
+.right-6{
+  right: 1.5rem;
+}
 .right-full{
   right: 100%;
 }
 .top-0{
   top: 0px;
+}
+.top-2{
+  top: 0.5rem;
 }
 .top-3{
   top: 0.75rem;
@@ -1760,8 +1774,8 @@ h2.title{
 .top-\[100px\]{
   top: 100px;
 }
-.top-\[160px\]{
-  top: 160px;
+.top-\[120px\]{
+  top: 120px;
 }
 .top-\[70px\]{
   top: 70px;
@@ -1858,9 +1872,6 @@ h2.title{
 .mb-8{
   margin-bottom: 2rem;
 }
-.mb-\[0\.25em\]{
-  margin-bottom: 0.25em;
-}
 .mb-\[0\.2em\]{
   margin-bottom: 0.2em;
 }
@@ -1890,9 +1901,6 @@ h2.title{
 }
 .mr-7{
   margin-right: 1.75rem;
-}
-.mr-auto{
-  margin-right: auto;
 }
 .mt-10{
   margin-top: 2.5rem;
@@ -1981,11 +1989,8 @@ h2.title{
 .h-8{
   height: 2rem;
 }
-.h-\[0\.5em\]{
-  height: 0.5em;
-}
-.h-\[0\.6em\]{
-  height: 0.6em;
+.h-\[0\.3em\]{
+  height: 0.3em;
 }
 .h-\[16px\]{
   height: 16px;
@@ -2072,9 +2077,6 @@ h2.title{
 .w-\[20px\]{
   width: 20px;
 }
-.w-\[25\%\]{
-  width: 25%;
-}
 .w-\[30px\]{
   width: 30px;
 }
@@ -2103,9 +2105,6 @@ h2.title{
 .min-w-0{
   min-width: 0px;
 }
-.min-w-\[200px\]{
-  min-width: 200px;
-}
 .min-w-\[50px\]{
   min-width: 50px;
 }
@@ -2120,6 +2119,9 @@ h2.title{
 }
 .max-w-\[220px\]{
   max-width: 220px;
+}
+.max-w-\[360px\]{
+  max-width: 360px;
 }
 .max-w-\[600px\]{
   max-width: 600px;
@@ -2156,9 +2158,6 @@ h2.title{
 }
 .basis-2\/3{
   flex-basis: 66.666667%;
-}
-.basis-\[360px\]{
-  flex-basis: 360px;
 }
 .basis-\[600px\]{
   flex-basis: 600px;
@@ -2266,9 +2265,6 @@ h2.title{
 .justify-start{
   justify-content: flex-start;
 }
-.justify-end{
-  justify-content: flex-end;
-}
 .justify-center{
   justify-content: center;
 }
@@ -2304,6 +2300,9 @@ h2.title{
 }
 .gap-8{
   gap: 2rem;
+}
+.gap-y-2{
+  row-gap: 0.5rem;
 }
 .self-start{
   align-self: flex-start;
@@ -2542,6 +2541,9 @@ h2.title{
 }
 .pr-1{
   padding-right: 0.25rem;
+}
+.pr-6{
+  padding-right: 1.5rem;
 }
 .pr-8{
   padding-right: 2rem;
@@ -2827,6 +2829,72 @@ h2.title{
 .group\/input:has(:invalid) .group-has-\[\:invalid\]\/input\:ping.status-dot::before{
   content: var(--tw-content);
   animation: ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@media (max-width: 1279px){
+
+  .xl\:card{
+    overflow: hidden;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    display: flex;
+    flex-direction: column;
+  }
+  .xl\:card figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0px;
+    min-width: 0px;
+  }
+  .xl\:card figure img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .xl\:card-body{
+    padding: 2rem;
+  }
+
+  @media (max-width: 767px){
+    .xl\:card-body{
+      padding: 1.25rem;
+    }
+  }
+
+  .card-wide .xl\:card-body{
+    padding: 3rem;
+  }
+
+  @media (max-width: 767px){
+    .card-wide .xl\:card-body{
+      padding: 1.25rem;
+    }
+  }
+
+  .card-compact .xl\:card-body{
+    padding: 1rem;
+  }
+
+  @media (max-width: 767px){
+    .card-compact .xl\:card-body{
+      padding: 1rem;
+    }
+  }
+
+  .card-compact-xs .xl\:card-body{
+    padding: 0.5rem;
+  }
+
+  @media (max-width: 767px){
+    .card-compact-xs .xl\:card-body{
+      padding: 0.5rem;
+    }
+  }
 }
 .\*\:grow > *{
   flex-grow: 1;
@@ -3229,18 +3297,6 @@ h2.title{
 .group\/languages:hover .group-hover\/languages\:pointer-events-auto{
   pointer-events: auto;
 }
-.group\/card:hover .group-hover\/card\:-translate-y-0{
-  --tw-translate-y: -0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group\/card:hover .group-hover\/card\:-translate-y-0\.5{
-  --tw-translate-y: -0.125rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group\/card:hover .group-hover\/card\:-translate-y-1{
-  --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .group\/fav:hover .group-hover\/fav\:translate-x-1{
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3384,6 +3440,11 @@ h2.title{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@media (max-width: 1600px){
+  .\32xl\:hidden{
+    display: none;
+  }
+}
 @media (max-width: 1279px){
   .xl\:static{
     position: static;
@@ -3424,12 +3485,36 @@ h2.title{
   .xl\:border-none{
     border-style: none;
   }
+  .xl\:bg-transparent{
+    background-color: transparent;
+  }
+  .xl\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  .xl\:p-0{
+    padding: 0px;
+  }
   .xl\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
   .xl\:pb-0{
     padding-bottom: 0px;
+  }
+  .xl\:shadow-lg{
+    --tw-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+    --tw-shadow-colored: 0 4px 14px 0 var(--tw-shadow-color);
+    box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+    box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
+  }
+  .xl\:shadow-none{
+    --tw-shadow: 0 0 rgba(0,0,0,0);
+    --tw-shadow-colored: 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+    box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
   }
 }
 @media (max-width: 1023px){
@@ -3454,6 +3539,9 @@ h2.title{
   .lg\:mb-12{
     margin-bottom: 3rem;
   }
+  .lg\:mb-4{
+    margin-bottom: 1rem;
+  }
   .lg\:ml-0{
     margin-left: 0px;
   }
@@ -3472,8 +3560,8 @@ h2.title{
   .lg\:aspect-landscape{
     aspect-ratio: 3 / 2;
   }
-  .lg\:h-8{
-    height: 2rem;
+  .lg\:h-7{
+    height: 1.75rem;
   }
   .lg\:w-full{
     width: 100%;
@@ -3543,8 +3631,8 @@ h2.title{
   }
 }
 @media (max-width: 767px){
-  .md\:left-0{
-    left: 0px;
+  .md\:absolute{
+    position: absolute;
   }
   .md\:right-2{
     right: 0.5rem;
@@ -3552,20 +3640,18 @@ h2.title{
   .md\:top-2{
     top: 0.5rem;
   }
-  .md\:top-full{
-    top: 100%;
-  }
   .md\:m-0{
     margin: 0px;
   }
   .md\:m-auto{
     margin: auto;
   }
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   .md\:-mt-\[80px\]{
     margin-top: -80px;
-  }
-  .md\:mb-10{
-    margin-bottom: 2.5rem;
   }
   .md\:mb-3{
     margin-bottom: 0.75rem;
@@ -3588,9 +3674,6 @@ h2.title{
   .md\:h-\[20px\]{
     height: 20px;
   }
-  .md\:h-\[calc\(100\%_-_60px\)\]{
-    height: calc(100% - 60px);
-  }
   .md\:w-3{
     width: 0.75rem;
   }
@@ -3609,14 +3692,23 @@ h2.title{
   .md\:max-w-full{
     max-width: 100%;
   }
+  .md\:shrink-0{
+    flex-shrink: 0;
+  }
   .md\:grow{
     flex-grow: 1;
+  }
+  .md\:basis-1\/3{
+    flex-basis: 33.333333%;
   }
   .md\:basis-1\/4{
     flex-basis: 25%;
   }
   .md\:basis-full{
     flex-basis: 100%;
+  }
+  .md\:flex-row-reverse{
+    flex-direction: row-reverse;
   }
   .md\:flex-col{
     flex-direction: column;
@@ -3633,14 +3725,17 @@ h2.title{
   .md\:justify-center{
     justify-content: center;
   }
-  .md\:justify-between{
-    justify-content: space-between;
+  .md\:justify-around{
+    justify-content: space-around;
   }
   .md\:gap-1{
     gap: 0.25rem;
   }
-  .md\:gap-8{
-    gap: 2rem;
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+  .md\:gap-4{
+    gap: 1rem;
   }
   .md\:gap-y-8{
     row-gap: 2rem;
@@ -3666,15 +3761,11 @@ h2.title{
   .md\:pb-6{
     padding-bottom: 1.5rem;
   }
+  .md\:pr-0{
+    padding-right: 0px;
+  }
   .md\:text-center{
     text-align: center;
-  }
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .md\:text-\[10px\]{
-    font-size: 10px;
   }
   .md\:text-\[9px\]{
     font-size: 9px;
@@ -3705,10 +3796,6 @@ h2.title{
   .md\:text-gold{
     --tw-text-opacity: 1;
     color: rgb(211 176 150 / var(--tw-text-opacity));
-  }
-  .group\/menu-item:hover .md\:group-hover\/menu-item\:translate-x-0{
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 @media (max-width: 639px){
@@ -3768,16 +3855,6 @@ h2.title{
 }
 .\[\&\.active\]\:opacity-100.active{
   opacity: 1;
-}
-@media (max-width: 767px){
-  .md\:\[\&\.active\]\:-translate-y-full.active{
-    --tw-translate-y: -100%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-  .md\:\[\&\.active\]\:translate-x-0.active{
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
 }
 .\*\:\[\&\.slick-active\]\:\*\:bg-gold > *.slick-active > *{
   --tw-bg-opacity: 1;
