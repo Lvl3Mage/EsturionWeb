@@ -3868,6 +3868,10 @@ h2.title{
     --tw-bg-opacity: 1;
     background-color: rgb(211 176 150 / var(--tw-bg-opacity));
   }
+  .sm\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
   .sm\:pb-\[60px\]{
     padding-bottom: 60px;
   }
