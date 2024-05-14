@@ -1780,11 +1780,11 @@ h2.title{
 .top-\[70px\]{
   top: 70px;
 }
-.top-\[75\%\]{
-  top: 75%;
+.top-\[74\%\]{
+  top: 74%;
 }
-.top-\[85\%\]{
-  top: 85%;
+.top-\[82\%\]{
+  top: 82%;
 }
 .top-\[calc\(100vh_-_220px\)\]{
   top: calc(100vh - 220px);
@@ -2089,11 +2089,11 @@ h2.title{
 .w-\[5\%\]{
   width: 5%;
 }
-.w-\[70\%\]{
-  width: 70%;
+.w-\[75\%\]{
+  width: 75%;
 }
-.w-\[80\%\]{
-  width: 80%;
+.w-\[84\%\]{
+  width: 84%;
 }
 .w-fit{
   width: -moz-fit-content;
@@ -2117,8 +2117,8 @@ h2.title{
 .max-w-4xl{
   max-width: 56rem;
 }
-.max-w-\[220px\]{
-  max-width: 220px;
+.max-w-\[200px\]{
+  max-width: 200px;
 }
 .max-w-\[360px\]{
   max-width: 360px;
@@ -2340,6 +2340,9 @@ h2.title{
 .rounded-xl{
   border-radius: 0.75rem;
 }
+.\!border-\[1\.3px\]{
+  border-width: 1.3px !important;
+}
 .border{
   border-width: 1px;
 }
@@ -2522,6 +2525,10 @@ h2.title{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -2558,14 +2565,14 @@ h2.title{
 .pt-2{
   padding-top: 0.5rem;
 }
-.pt-3{
-  padding-top: 0.75rem;
-}
 .pt-4{
   padding-top: 1rem;
 }
 .pt-5{
   padding-top: 1.25rem;
+}
+.pt-8{
+  padding-top: 2rem;
 }
 .text-left{
   text-align: left;
@@ -2596,6 +2603,9 @@ h2.title{
 }
 .text-\[14px\]{
   font-size: 14px;
+}
+.text-\[18px\]{
+  font-size: 18px;
 }
 .text-\[length\:--text-size\]{
   font-size: var(--text-size);
@@ -3675,8 +3685,14 @@ h2.title{
   .md\:aspect-square{
     aspect-ratio: 1 / 1;
   }
+  .md\:h-1{
+    height: 0.25rem;
+  }
   .md\:h-\[20px\]{
     height: 20px;
+  }
+  .md\:w-1{
+    width: 0.25rem;
   }
   .md\:w-3{
     width: 0.75rem;
@@ -3800,6 +3816,12 @@ h2.title{
   .md\:text-gold{
     --tw-text-opacity: 1;
     color: rgb(211 176 150 / var(--tw-text-opacity));
+  }
+  .md\:outline-1{
+    outline-width: 1px;
+  }
+  .md\:\*\:p-1 > *{
+    padding: 0.25rem;
   }
 }
 @media (max-width: 639px){
