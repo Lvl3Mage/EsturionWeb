@@ -3872,8 +3872,8 @@ h2.title{
   .sm\:-top-0\.5{
     top: -0.125rem;
   }
-  .sm\:bottom-\[calc\(30px_-_5px\)\]{
-    bottom: calc(30px - 5px);
+  .sm\:bottom-\[calc\(30px_-_1px\)\]{
+    bottom: calc(30px - 1px);
   }
   .sm\:top-\[calc\(100\%_-_30px\)\]{
     top: calc(100% - 30px);
