@@ -1970,6 +1970,9 @@ h2.title{
 .h-0{
   height: 0px;
 }
+.h-1{
+  height: 0.25rem;
+}
 .h-10{
   height: 2.5rem;
 }
@@ -2042,6 +2045,9 @@ h2.title{
 }
 .w-0{
   width: 0px;
+}
+.w-1{
+  width: 0.25rem;
 }
 .w-1\/2{
   width: 50%;
@@ -2145,9 +2151,6 @@ h2.title{
 }
 .max-w-xs{
   max-width: 20rem;
-}
-.flex-1{
-  flex: 1 1 0%;
 }
 .shrink-0{
   flex-shrink: 0;
@@ -3277,10 +3280,6 @@ h2.title{
 }
 .hover\:text-\[color\:--color-hover\]:hover{
   color: var(--color-hover);
-}
-.hover\:text-gold:hover{
-  --tw-text-opacity: 1;
-  color: rgb(211 176 150 / var(--tw-text-opacity));
 }
 .hover\:shadow-xl:hover{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
