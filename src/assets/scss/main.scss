@@ -214,7 +214,7 @@
 
 
 	.btn{
-		@apply p-4 rounded-full border-2 border-gold text-center font-roman text-xl font-bold;
+		@apply p-4 rounded-full border-[1.45px] border-gold text-center font-roman text-xl font-bold;
 		@apply md:p-2 md:text-lg;
 		@apply hover:[&:not(:disabled)]:bg-gold hover:[&:not(:disabled)]:text-white transition cursor-pointer;
 		@apply active:shadow-inner-md;
