@@ -268,7 +268,7 @@ function InitializeSliders(){
 				</svg>
 			</div>
 		</button>`,
-		dotsClass: 'absolute top-[70px] sm:top-[calc(100%_-_70px)] sm:z-10 right-0 left-0 h-8 *:p-3 md:*:p-1 flex justify-center md:items-center gap-2 *:[&.slick-active]:*:outline-white sm:*:[&.slick-active]:*:outline-gold *:hover:*:brightness-90 *:rounded-full overflow-hidden',
+		dotsClass: 'absolute top-[70px] sm:top-[calc(100%_-_30px)] sm:z-10 right-0 left-0 h-8 *:p-3 md:*:p-1 flex justify-center md:items-center gap-2 *:[&.slick-active]:*:outline-white sm:*:[&.slick-active]:*:outline-gold *:hover:*:brightness-90 *:rounded-full overflow-hidden',
 		customPaging : function(slider, i) {
 			return `<div class="bg-white sm:bg-gold cursor-pointer w-2 h-2 md:w-1 md:h-1 transition-all duration-300 ease-out-wobble rounded-full outline-offset-4 outline outline-transparent outline-2 md:outline-1">
 			</div>`;
@@ -287,6 +287,7 @@ function InitializeSliders(){
 		fade: true,
 		cssEase: 'linear',
 		asNavFor: '.banner-slider',
+		adaptiveHeight: true,
 	});
 
 	$(".item-slider").slick({
