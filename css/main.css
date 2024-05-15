@@ -1835,6 +1835,12 @@ h2.title{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.-ml-2{
+  margin-left: -0.5rem;
+}
+.-ml-2\.5{
+  margin-left: -0.625rem;
+}
 .-mt-\[50px\]{
   margin-top: -50px;
 }
@@ -2030,6 +2036,9 @@ h2.title{
 }
 .max-h-\[400px\]{
   max-height: 400px;
+}
+.max-h-\[calc\(8em\+1\.25rem\*3\)\]{
+  max-height: calc(8em + 1.25rem * 3);
 }
 .w-0{
   width: 0px;
@@ -2460,6 +2469,9 @@ h2.title{
 }
 .p-2{
   padding: 0.5rem;
+}
+.p-2\.5{
+  padding: 0.625rem;
 }
 .p-3{
   padding: 0.75rem;
