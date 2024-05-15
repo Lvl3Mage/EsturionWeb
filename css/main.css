@@ -2392,6 +2392,10 @@ h2.title{
   --tw-bg-opacity: 1;
   background-color: rgb(22 45 72 / var(--tw-bg-opacity));
 }
+.bg-\[\#1c3251\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 50 81 / var(--tw-bg-opacity));
+}
 .bg-\[\#FFF1\]{
   background-color: rgba(255,255,255,0.06667);
 }
