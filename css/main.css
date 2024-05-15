@@ -3857,11 +3857,11 @@ h2.title{
   .sm\:-top-0\.5{
     top: -0.125rem;
   }
-  .sm\:bottom-\[55px\]{
-    bottom: 55px;
+  .sm\:bottom-\[calc\(30px_-_5px\)\]{
+    bottom: calc(30px - 5px);
   }
-  .sm\:top-\[calc\(100\%_-_60px\)\]{
-    top: calc(100% - 60px);
+  .sm\:top-\[calc\(100\%_-_30px\)\]{
+    top: calc(100% - 30px);
   }
   .sm\:z-10{
     z-index: 10;
@@ -3911,8 +3911,8 @@ h2.title{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .sm\:pb-\[60px\]{
-    padding-bottom: 60px;
+  .sm\:pb-\[30px\]{
+    padding-bottom: 30px;
   }
   .sm\:font-medium{
     font-weight: 500;
