@@ -3860,8 +3860,8 @@ h2.title{
   .sm\:bottom-\[55px\]{
     bottom: 55px;
   }
-  .sm\:top-\[calc\(100\%_-_70px\)\]{
-    top: calc(100% - 70px);
+  .sm\:top-\[calc\(100\%_-_60px\)\]{
+    top: calc(100% - 60px);
   }
   .sm\:z-10{
     z-index: 10;
