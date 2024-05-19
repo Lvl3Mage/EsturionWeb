@@ -1750,6 +1750,9 @@ h2.title{
 .right-3\.5{
   right: 0.875rem;
 }
+.right-4{
+  right: 1rem;
+}
 .right-6{
   right: 1.5rem;
 }
@@ -2119,6 +2122,9 @@ h2.title{
 .min-w-0{
   min-width: 0px;
 }
+.min-w-\[250px\]{
+  min-width: 250px;
+}
 .min-w-\[50px\]{
   min-width: 50px;
 }
@@ -2142,6 +2148,9 @@ h2.title{
 }
 .max-w-full{
   max-width: 100%;
+}
+.max-w-md{
+  max-width: 28rem;
 }
 .max-w-none{
   max-width: none;
@@ -2169,6 +2178,12 @@ h2.title{
 }
 .basis-2\/3{
   flex-basis: 66.666667%;
+}
+.basis-\[200px\]{
+  flex-basis: 200px;
+}
+.basis-\[360px\]{
+  flex-basis: 360px;
 }
 .basis-\[600px\]{
   flex-basis: 600px;
@@ -2276,6 +2291,9 @@ h2.title{
 .justify-start{
   justify-content: flex-start;
 }
+.justify-end{
+  justify-content: flex-end;
+}
 .justify-center{
   justify-content: center;
 }
@@ -2335,6 +2353,9 @@ h2.title{
 }
 .rounded-3xl{
   border-radius: 1.5rem;
+}
+.rounded-\[4px\]{
+  border-radius: 4px;
 }
 .rounded-full{
   border-radius: 9999px;
@@ -2451,6 +2472,12 @@ h2.title{
 }
 .stroke-blue{
   stroke: #183250;
+}
+.stroke-gold{
+  stroke: #D3B096;
+}
+.stroke-stone-300{
+  stroke: #d6d3d1;
 }
 .object-contain{
   -o-object-fit: contain;
@@ -2872,6 +2899,21 @@ h2.title{
   content: var(--tw-content);
   animation: ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+@keyframes ping-lg{
+  75%, 100%{
+    content: var(--tw-content);
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.group\/form:not(.hide-errors) .group\/input[\:has\(\:invalid\)] .group-\[\&\:not\(\.hide-errors\)\]\/form\:group-has-\[\:invalid\]\/input\:ping.status-dot::before{
+  content: var(--tw-content);
+  animation: ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.group\/form:not(.hide-errors) .group\/input:has(:invalid) .group-\[\&\:not\(\.hide-errors\)\]\/form\:group-has-\[\:invalid\]\/input\:ping.status-dot::before{
+  content: var(--tw-content);
+  animation: ping-lg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
 @media (max-width: 1279px){
 
   .xl\:card{
@@ -3085,6 +3127,10 @@ h2.title{
 .before\:rounded-full::before{
   content: var(--tw-content);
   border-radius: 9999px;
+}
+.before\:rounded-sm::before{
+  content: var(--tw-content);
+  border-radius: 0.125rem;
 }
 .before\:border-b::before{
   content: var(--tw-content);
@@ -3458,6 +3504,12 @@ h2.title{
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.group\/input[\:has\(\:invalid\)] .group-has-\[\:invalid\]\/input\:hidden{
+  display: none;
+}
+.group\/input:has(:invalid) .group-has-\[\:invalid\]\/input\:hidden{
+  display: none;
+}
 .group\/input[\:has\(\:valid\)] .group-has-\[\:valid\]\/input\:text-green-500{
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
@@ -3665,6 +3717,9 @@ h2.title{
   }
 }
 @media (max-width: 767px){
+  .md\:static{
+    position: static;
+  }
   .md\:absolute{
     position: absolute;
   }
