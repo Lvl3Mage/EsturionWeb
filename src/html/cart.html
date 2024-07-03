@@ -11,15 +11,15 @@
 			
 		</div>
 		<a class="flex items-center group/link">
-			<img src="../assets/images/arrow-left.svg" alt="" class="w-6 mr-3 group-hover/link:-translate-x-2 duration-300 transition ease-out-wobble">
-			<span class="underline text-sm font-medium">Вернуться в каталог</span>
+			<img src="../assets/images/arrow-left.svg" alt="" class="w-6  md:w-4 mr-3 md:mr-2 group-hover/link:-translate-x-2 duration-300 transition ease-out-wobble">
+			<span class="underline text-sm font-medium text-blue-950">Вернуться в каталог</span>
 		</a>
 	</div>
 	<!-- Orders -->
 	<div class="flex justify-center items-center mb-16 py-4 text-gray-600 text-lg">
 		<span>Ваша корзина пуста.</span>
 	</div>
-	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 border-b border-neutral-200 mb-16 md:pb-6 md:mb-6">
+	<div class="flex flex-col gap-6 cart-slider-mobile pb-16 md:border-0 border-b border-neutral-200 mb-16 md:pb-2 md:mb-6">
 		<div class="px-2 py-4">
 			<div class="card card-compact bg-white shadow-lg rounded-2xl relative">
 				<div class="card-body flex items-center justify-between gap-8 md:gap-3">
@@ -27,33 +27,62 @@
 						<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[80px] shrink-0 overflow-hidden p-1 border-gold border">
 							<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover rounded-xl">
 						</div>
-						<div class="flex gap-8 justify-between md:justify-around grow md:flex-wrap gap-y-2">
+						<div class="flex gap-8 justify-end md:justify-between grow md:flex-wrap gap-y-2">
 							
-							<div class=" uppercase md:flex md:flex-col md:basis-full">
-								<span class="text-xl md:text-sm font-roman font-bold pr-6">икра Чёрная классик</span>
+							<div class="grow md:grow-0 uppercase md:flex md:flex-col md:basis-full">
+								<a class="hover:text-gold transition transition-colors duration-75 text-xl md:text-[12px] font-roman font-semibold pr-6 md:pr-10 leading-snug">икра Чёрная классик икра Чёрная классик</a>
 							</div>
 							<div class="flex items-center gap-2">
 								<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
 								<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
 								<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
 							</div>
-							<div class="text-3xl md:text-xl font-semibold whitespace-nowrap flex items-center">30 €</div>
+							<div class="basis-2/12  text-3xl md:text-xl font-semibold whitespace-nowrap flex justify-end items-center">30 €</div>
 						</div>
 						
 					</div>
-					<div class="md:absolute right-2 top-2">
-						<div class="cross group/cross relative h-[30px] w-[30px] flex-col justify-center flex cursor-pointer">
+					<div class="md:absolute right-2 top-2 basis-2/12">
+						<div class="ml-auto md:ml-0 cross group/cross relative h-[30px] w-[30px] flex-col justify-center flex cursor-pointer">
 							<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
 							<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+		</div>
+		<div class="px-2 py-4">
+			<div class="card card-compact bg-white shadow-lg rounded-2xl relative">
+				<div class="card-body flex items-center justify-between gap-8 md:gap-3">
+					<div class="flex justify-between items-center gap-6 grow sm:justify-around">
+						<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[80px] shrink-0 overflow-hidden p-1 border-gold border">
+							<img src="../assets/images/product.png" alt="" class="w-full h-full object-center object-cover rounded-xl">
+						</div>
+						<div class="flex gap-8 justify-end md:justify-between grow md:flex-wrap gap-y-2">
+							
+							<div class="grow md:grow-0 uppercase md:flex md:flex-col md:basis-full">
+								<span class="text-xl md:text-[12px] font-roman font-semibold pr-6 md:pr-10 leading-snug">икра Чёрная классик икра Чёрная классик</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-minus"></i></div>
+								<input class="rounded-full border border-gold w-10 h-10 text-center font-medium" value="1">
+								<div class="text-xs cursor-pointer ease-out-wobble hover:shadow-xl"><i class="fa-solid fa-plus"></i></div>
+							</div>
+							<div class="basis-2/12  text-3xl md:text-xl font-semibold whitespace-nowrap flex justify-end items-center">300 €</div>
+						</div>
+						
+					</div>
+					<div class="md:absolute right-2 top-2 basis-2/12">
+						<div class="ml-auto md:ml-0 cross group/cross relative h-[30px] md:h-[20px] w-[30px] md:w-[20px] flex-col justify-center flex cursor-pointer">
+							<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
+							<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- Coupons -->
-	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5">
+	<div class="flex justify-between items-center flex-wrap md:justify-center gap-8 mb-5 md:gap-0 md:mt-16 md:mb-8">
 		<div class="relative w-fit h-fit m-4 mr-6">
 			<div class="p-7 md:p-3 z-10 relative flex gap-7 items-center">
 				<div class="group/input relative before:absolute before:w-[calc(100%_-16px*4)] before:border-b before:border-gold before:top-1 before:right-8 w-fit before:bg-gray-300 before:rounded-full before:transition before:ease-in-out before:scale-0 before:duration-500 before:hover:scale-100 before:focus-within:scale-100 before:origin-right after:absolute after:w-[calc(100%_-16px*4)] after:border-b after:border-gold after:bottom-1 after:left-8 after:bg-gray-300 after:rounded-full after:transition after:ease-in-out after:scale-0 after:duration-500 after:hover:scale-100 after:focus-within:scale-100 after:origin-left">
@@ -68,21 +97,21 @@
 				<img src="../assets/images/arrow-card.svg#svgView(preserveAspectRatio(none))" alt="" class="w-full h-full">
 			</div>
 		</div>
-		<div class="flex grow justify-between items-center gap-4 md:flex-wrap">
-			<div class="text-3xl md:text-xl md:basis-full">
+		<div class="md:order-3 flex grow justify-between items-center gap-4 md:flex-wrap md:px-2">
+			<div class="text-3xl md:text-xl md:basis-full md:mt-4 md:mb-2">
 				<div class="my-4 flex justify-between">Итоговая сумма: <span class="ml-4 font-semibold">70 €</span></div>
 				<div class="my-4 flex justify-between">Итоговая сумма: <span class="ml-4 font-semibold">70 €</span></div>
 			</div>
 			<a href="" class="btn uppercase grow max-w-xs md:max-w-full md:basis-full">Оплатить</a>
 		</div>
-	</div>
-	<div class="flex items-center gap-4 font-bold flex-wrap">
-		<div class="">Примененные промокоды:</div>
-		<div class="flex gap-2 items-center text-gold">
-			OBJJJ48
-			<div class="cross group/cross relative h-[20px] w-[20px] flex-col justify-center flex cursor-pointer">
-				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
-				<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
+		<div class="md:order-2 md:text-sm md:basis-full flex items-center gap-4 font-bold flex-wrap ml-4 md:ml-2">
+			<div class="">Примененные промокоды:</div>
+			<div class="flex gap-2 items-center text-gold uppercase">
+				OBJJJ48
+				<div class="cross group/cross relative h-[20px] w-[20px] flex-col justify-center flex cursor-pointer">
+					<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[135deg] translate-y-[1px]"></div>
+					<div class="bg-gold h-[2px] w-2/3 transition duration-300 rounded-sm ease-out-wobble group-hover/cross:scale-x-75  rotate-[-135deg] translate-y-[-1px]"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -116,6 +145,7 @@
 		</div>
 	</div>
 </div>
+<div class="md:-mb-10"></div>
 <%- include('inc/footer.html') %>
 </body>
 

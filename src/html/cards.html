@@ -1,7 +1,10 @@
 <%- include('inc/header.html') %>	
 <div class="container my-4">
 	<div class="flex flex-wrap justify-center lg:after:hidden gap-7 ">
-		<div class="card card-compact shadow-lg bg-white w-[360px]">
+
+
+		<div class="card card-compact shadow-lg bg-white max-w-[360px] relative hover:scale-[1.01] transition ease-out-wobble duration-100">
+			<a href="#" class="absolute w-full h-full"></a>
 			<figure class="aspect-landscape shrink-0">
 				<img src="../assets/images/product.png" alt="">
 			</figure>
@@ -9,10 +12,10 @@
 				<h2 class="font-roman text-2xl mb-6">
 					Икра черная классик
 				</h2>
-				<div class="mb-6 flex justify-between items-center gap-2">
+				<div class="mb-6 flex justify-between items-center gap-2 relative z-10">
 					<div class="">
-						<span class="font-bold">Грамм</span>
-						<i class="fa-solid fa-arrow-right"></i>
+						<span class="font-bold md:text-[14px]">Грамм</span>
+						<i class="fa-solid fa-arrow-right md:text-[14px]"></i>
 						<select data-dropdown class="border-gold inline-flex flex-row-reverse gap-2 items-center border px-3 py-1 rounded-full ml-2 text-[14px]" data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu text-[14px]">
 							<option value="30">30 гр</option>
 							<option value="60">60 гр</option>
@@ -30,9 +33,11 @@
 					<span class="font-semibold text-3xl basis-1/2 text-left self-start">30 €</span>
 					<span class="text-stone-600 basis-1/2 text-right text-[14px]">Цена за баночку 30 гр</span>
 				</div>
-				<a href="" class="btn block mt-auto">Купить</a>
+				<a href="" class="btn block mt-auto relative z-10">Купить</a>
 			</div>
 		</div>
+
+
 		
 	</div>
 	
