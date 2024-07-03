@@ -6,14 +6,19 @@
 <div class="overflow-hidden relative -mt-[50px] md:-mt-[80px]">
 	<!-- <img src="../assets/images/banner-mask.svg" alt="" class="w-full opacity-0 pointer-events-none md:hidden">
 	<img src="../assets/images/banner-mask-mobile.svg" alt="" class="w-full  pointer-events-none hidden md:block"> -->
-	<div class="w-full aspect-landscape md:aspect-square overflow-hidden relative sm:bg-white">
+	<div class="w-full aspect-[7/3] xl:aspect-[7/4] lg:aspect-[7/5] md:aspect-square overflow-hidden relative sm:bg-white">
 		<div class="banner-slider def-slider def-slider--full-h h-full z-10 relative sm:pb-[30px]">
 			<div class="h-full relative">
 				<div class="absolute inset-0 text-white z-10 mt-[50px]">
 					<div class="container h-full sm:hidden">
-						<div class="flex flex-col justify-center items-start h-full">
+						<div class="flex flex-col justify-center items-start h-full" style="margin-top: -4rem;">
 							
-							<div class="text-[length:--text-size] lg:text-[length:calc((var(--text-size)_+_var(--text-mobile-size))/2)] md:text-[length:--text-mobile-size] text-[color:--text-color] mt-[length:--margin-top] font-[number:--text-weight] font-roman">
+							<div class="text-[color:--text-color] mt-[length:--margin-top] font-[number:--text-weight] font-roman text-adaptive" style="
+								--text-size: 60px;
+								--text-size-no-px: 60;
+								--text-mobile-size-no-px: calc(60 * 0.5);
+								--text-mobile-size: calc(60 * 0.5)px;
+							">
 								<!-- font-montserrat -->
 								Премиум коллекция
 							</div>
@@ -87,7 +92,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sm:hidden absolute top-[74%] left-0 right-0 m-auto w-[84%] aspect-square rounded-full border-2 border-white z-20">
+		<div class="md:hidden absolute top-[65%] left-0 right-0 m-auto w-[73%] aspect-square rounded-full border-2 border-white z-20">
 			<div class="absolute top-0 bottom-0 left-[45%] w-[10%] rotate-[var(--angle)]">
 				<div class="absolute top-0 left-1/2">
 					<div class="bg-white rounded-full w-5 h-5 -translate-x-1/2 -translate-y-1/2"></div>
@@ -121,7 +126,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sm:hidden absolute top-[82%] left-0 right-0 m-auto w-[75%] md:w-[60%] aspect-square rounded-full border-2 border-white animate-spin-slow pointer-events-none z-20">
+		<div class="md:hidden absolute top-[75%] left-0 right-0 m-auto w-[66%] md:w-[60%] aspect-square rounded-full border-2 border-white animate-spin-slow pointer-events-none z-20">
 			<div class="absolute inset-0 rotate-90">
 				<div class="absolute -top-[4%] left-[45%] w-[10%]">
 					<img src="../assets/images/fish-decor.svg" alt="" class="w-full">
@@ -162,7 +167,7 @@
 	</div>
 </div>
 <div class="container hidden sm:block bg-white pb-4">
-	<div class="banner-aux-slider">
+	<div class="banner-aux-slider md:py-3">
 		<div class="">
 			<div class="flex flex-col text-center justify-center items-center gap-5">
 				
@@ -196,9 +201,9 @@
 			
 		</div>
 		<div class="">
-			<div class="flex flex-col text-center justify-center items-center gap-3 ">
+			<div class="flex flex-col text-center justify-center items-center gap-4 ">
 				
-				<div class="font-roman text-lg uppercase font-regular">
+				<div class="font-roman text-lg uppercase font-regular  leading-tight">
 					Премиум коллекция
 					4 вида икры
 				</div>

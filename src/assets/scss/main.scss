@@ -28,7 +28,7 @@
 		@apply text-justify;
 	}
 	.def-text{
-		@apply md:text-sm text-justify;
+		@apply text-[16px] md:text-[12px] leading-snug;
 		h1{
 			@apply text-5xl sm:text-3xl font-bold font-roman mb-2;
 		}
@@ -44,8 +44,8 @@
 		ul{
 			@apply my-5;
 			li{
-				@apply pl-4 relative ;
-				@apply before:w-2 before:h-2 before:rounded-full before:border-gold before:inline-block before:border-2 before:absolute before:left-0;
+				@apply pl-4 relative mb-3;
+				@apply before:w-2 before:h-2 before:rounded-full before:border-gold before:inline-block before:border before:absolute before:left-0;
 				@apply before:top-0 before:bottom-0 before:m-auto;
 			}
 		}
@@ -88,7 +88,7 @@
 	.breadcrumbs{
 		&>div{
 			&>span{
-				@apply flex gap-2 pb-5 pt-2 md:text-sm;
+				@apply flex gap-2 py-[60px] md:pt-[30px] md:pb-[30px] md:text-[12px] font-medium;
 				&>span{
 					@apply after:w-1 after:h-1 after:rounded-full after:bg-gold after:inline-block flex items-center gap-2 last:after:hidden;
 					@apply last:text-gold;
@@ -173,7 +173,7 @@
 	// 	}
 	// }
 	h1.title{
-		@apply text-gold font-roman text-5xl md:text-lg uppercase;
+		@apply text-gold font-roman text-[42px] md:text-[20px] uppercase;
 	}
 	h2.title{
 		@apply text-gold font-roman text-4xl md:text-lg uppercase;
@@ -295,7 +295,7 @@
 		}
 	}
 	.form-input{
-		@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 md:p-4;
+		@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 md:py-[10px] md:text-[12px];
 		@apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
 		@apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
 		@apply group-has-[:invalid]/input:outline-red-500 group-has-[:invalid]/input:outline-1 group-has-[:invalid]/input:outline ;
@@ -363,4 +363,13 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+}
+.text-adaptive {
+  font-size: calc((100vw - 600px)/(1600 - 600) * (var(--text-size-no-px) - var(--text-mobile-size-no-px)) + var(--text-mobile-size));
+  @media screen and (min-width: 1600px) {
+    font-size: var(--text-size);
+  }
+  @media screen and (max-width: 600px) {
+    font-size: var(--text-size-mobile);
+  }
 }
