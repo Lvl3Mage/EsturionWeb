@@ -78,7 +78,7 @@
 			</div>
 		</div>
 		<!-- add class hide-errors -->
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1"> 
+		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1 xl:-mt-[200px] group/form "> 
 			<div class="xl:card xl:bg-white xl:shadow-lg">
 				<div class="xl:card-body">
 					
@@ -133,8 +133,8 @@
 							</div>
 							<div class="basis-1/2 md:basis-full">
 								<div class="relative w-full group/input">
-									<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden group-[&.hide-errors]/form:hidden">
-										<div class="status-dot absolute text-red-500 group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
+									<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
+										<div class="status-dot absolute text-red-500 group-[&:not(.hide-errors)]/form:group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
 									</div>
 									<input required type="text" placeholder="Телефон" class="w-full form-input">
 								</div>
