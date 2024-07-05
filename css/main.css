@@ -2173,6 +2173,9 @@ h2.title{
 .max-w-4xl{
   max-width: 56rem;
 }
+.max-w-64{
+  max-width: 16rem;
+}
 .max-w-\[200px\]{
   max-width: 200px;
 }
