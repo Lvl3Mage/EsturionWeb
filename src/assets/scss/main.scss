@@ -6,10 +6,11 @@
 @import './presets/vars';
 @import './presets/def-presets';
 
-
 //Libraries
-@import './libs/ibg'; // Also include in JS
-@import './libs/modal'; // Also include in JS
+@import './libs/ibg';
+// Also include in JS
+@import './libs/modal';
+// Also include in JS
 @import './libs/slick-stylize';
 
 @import './presets/fonts';
@@ -17,302 +18,389 @@
 
 @import './utils/def-forms';
 
-@layer base{
-	body{
-		@apply text-blue font-montserrat;
-		@apply bg-linen;
-	}
+@layer base {
+  body {
+    @apply text-blue font-montserrat;
+    @apply bg-linen;
+  }
 }
-@layer components{
-	p{
-		@apply text-justify;
-	}
-	.def-text{
-		@apply text-[16px] md:text-[12px] leading-snug;
-		h1{
-			@apply text-5xl sm:text-3xl font-bold font-roman mb-2;
-		}
-		h2{
-			@apply text-4xl sm:text-2xl font-bold font-roman mb-2;
-		}
-		h3, h4, h5, h6{
-			@apply text-3xl sm:text-xl font-bold font-roman mb-2;
-		}
-		p{
-			@apply my-5;
-		}
-		ul{
-			@apply my-5;
-			li{
-				@apply pl-4 relative mb-3;
-				@apply before:w-2 before:h-2 before:rounded-full before:border-gold before:inline-block before:border before:absolute before:left-0;
-				@apply before:top-0 before:bottom-0 before:m-auto;
-			}
-		}
-		ol{
-			@apply my-5;
-			@apply list-decimal;
-			li{
-				@apply ml-4;
-			}
-		}
-		
-	}
-	.hover-pulse{
-		@apply hover:drop-shadow ease-in-out duration-300 hover:scale-[0.95] transition;
-	}
-	.scrollbar{
-		&::-webkit-scrollbar {
-			width: 8px;
-		}
 
-		/* Track */
-		&::-webkit-scrollbar-track {
-			background-color: #fff;
-		}
+@layer components {
+  p {
+    @apply text-justify;
+  }
 
+  .theme-dark {
+    @apply inline-block w-full bg-blue text-white;
+  }
 
-		/* Handle on hover */
-		&::-webkit-scrollbar-thumb:hover {
-			cursor: pointer;
+  .dotted-list {
+    li {
+      @apply pl-4 relative;
+      @apply before:w-2 before:h-2 before:rounded-full before:inline-block before:absolute before:left-0;
+      @apply before:top-0 before:bottom-0 before:m-auto;
+    }
 
-			background-color: #a08571;
-		}
-		&::-webkit-scrollbar-thumb {
-			background-color: #D3B096;
-			background-clip: padding-box; 
-			border: 2px solid #fff;
-			border-radius: 3px;
-		}
-	}
-	.breadcrumbs{
-		&>div{
-			&>span{
-				@apply flex gap-2 py-[60px] md:pt-[30px] md:pb-[30px] md:text-[12px] font-medium;
-				&>span{
-					@apply after:w-1 after:h-1 after:rounded-full after:bg-gold after:inline-block flex items-center gap-2 last:after:hidden;
-					@apply last:text-gold;
-					a{
-						@apply hover:text-gold transition
-					}
-				}
-			}
-		}
-	}
-	.wpcf7{
-		.container{
-			max-width: 100%;
-			padding: 0;
-		}
-		.row{
-			@apply flex;
-			.full{
-				@apply basis-full;
-			}
-			.one-half{
-				@apply basis-1/2;
-			}
-		}
-		.field {
-			@apply p-1;
-		}
-		.form-control{
-			@apply form-input;
-			@apply w-full rounded-full #{!important}; // important to override plugin styles
-		}
-		a{
-			@apply underline text-gold;
-		}
-		.btn{
-			@apply w-full mb-1;
-			@apply rounded-full #{!important};
-		}
-	}
-	// .scrollbar-x-xs{
-	// 	&::-webkit-scrollbar {
-	// 		height: 3px;
-	// 	}
+  }
 
-	// 	/* Track */
-	// 	&::-webkit-scrollbar-track {
-	// 		background-color: #ddd;
-	// 	}
+  .dotted-list-top {
+    li {
+      @apply before:bottom-[calc(100%_-_1.5em)] #{!important};
+    }
+  }
 
-	// 	/* Handle */
-	// 	&::-webkit-scrollbar-thumb {
-	// 		background-color: #888;
-	// 		border-radius: 3px;
-	// 	}
+  .dotted-list-empty {
+    @apply dotted-list;
+    li {
+      @apply before:border-gold before:border;
+    }
+  }
 
-	// 	/* Handle on hover */
-	// 	&::-webkit-scrollbar-thumb:hover {
-	// 		cursor: pointer;
-	// 		/*redifine styles like background and border radius*/
-	// 	}
-	// }
-	// .scrollbar-y-xs{
-	// 	&::-webkit-scrollbar {
-	// 		height: 3px;
-	// 	}
+  .dotted-list-filled {
+    @apply dotted-list;
+    li {
+      @apply before:bg-gold;
+    }
+  }
 
-	// 	/* Track */
-	// 	&::-webkit-scrollbar-track {
-	// 		background-color: #ddd;
-	// 	}
+  .def-text {
+    @apply text-[16px] md:text-[12px] leading-snug;
+    h1 {
+      @apply text-5xl sm:text-3xl font-bold font-roman mb-2;
+    }
 
-	// 	/* Handle */
-	// 	&::-webkit-scrollbar-thumb {
-	// 		background-color: #888;
-	// 		border-radius: 3px;
-	// 	}
+    h2 {
+      @apply text-4xl sm:text-2xl font-bold font-roman mb-2;
+    }
 
-	// 	/* Handle on hover */
-	// 	&::-webkit-scrollbar-thumb:hover {
-	// 		cursor: pointer;
-	// 		/*redifine styles like background and border radius*/
-	// 	}
-	// }
-	h1.title{
-		@apply text-gold font-roman text-[42px] md:text-[20px] uppercase;
-	}
-	h2.title{
-		@apply text-gold font-roman text-4xl md:text-lg uppercase;
-	}
-	.card {
-		@apply bg-white rounded-2xl overflow-hidden;
-		@apply flex flex-col;
-		figure{
-			@apply flex items-center justify-center;
-			@apply min-w-0 min-h-0;
-			img{
-				@apply w-full h-full object-cover object-center;
-			}
-		}
-	}
+    h3, h4, h5, h6 {
+      @apply text-3xl sm:text-xl font-bold font-roman mb-2;
+    }
 
-	.card-body {
-		@apply p-8 md:p-5;
-	}
-	.card-wide{
-		.card-body{
-			@apply p-12 md:p-5;
-		}
-	}
-	.card-compact{
-		.card-body{
-			@apply p-4 md:p-4;
-		}
-	}
-	.card-compact-xs{
-		.card-body{
-			@apply p-2 md:p-2;
-		}
-	}
-	.card-side {
-		@apply flex-row;
-	}
+    p {
+      @apply my-5;
+    }
+
+    ul {
+      @apply my-5;
+      li {
+        @apply pl-4 relative mb-3;
+        @apply before:w-2 before:h-2 before:rounded-full before:border-gold before:inline-block before:border before:absolute before:left-0;
+        @apply before:top-0 before:bottom-0 before:m-auto;
+      }
+    }
+
+    ol {
+      @apply my-5;
+      @apply list-decimal;
+      li {
+        @apply ml-4;
+      }
+    }
+
+  }
+
+  .hover-pulse {
+    @apply hover:drop-shadow ease-in-out duration-300 hover:scale-[0.95] transition;
+  }
+
+  .scrollbar {
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+    }
 
 
-	.btn{
-		@apply p-4 rounded-full border-[1.45px] border-gold text-center font-roman text-xl font-bold;
-		@apply md:p-2 md:text-lg;
-		@apply hover:[&:not(:disabled)]:bg-gold hover:[&:not(:disabled)]:text-white transition cursor-pointer;
-		@apply active:shadow-inner-md;
-		@apply disabled:opacity-80 disabled:bg-gray-200 disabled:border-gray-400;
-	}
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      cursor: pointer;
 
-	.dropdown-radio-menu{
-		ul{
-			@apply max-h-[300px] overflow-y-auto;
-		}
-		ul .ui-menu-item div{
-			@apply relative;
-			padding-left: 40px !important;
-			&:before{
-				content: '';
-				position: absolute;
-				left: 10px;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				width: 22px;
-				height: 22px;
-				@apply border border-gold rounded-full bg-white;
-			}
-			&:after{
-				content: '';
-				@apply z-10 absolute;
+      background-color: #a08571;
+    }
 
-				left: calc(10px + (22px - 6px) / 2);
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				@apply bg-gold transition h-1.5 w-1.5 rounded-full scale-0;
-			}
-			&.ui-state-active:after{
-				@apply scale-100;
-			}
-		}
-		ul:before{
-			content: '';
-			width: 1px;
-			position: absolute;
-			height: 100%;
-			background: #D3B096;
-			padding: 25px 0;
-			left: calc(20px);
-			top: 0;
-			bottom: 0;
-			z-index: 0;
-			background-clip: content-box;
-		}
-	}
-	.dropdown-menu-gold{
-		ul{
-			@apply bg-white rounded-lg shadow-lg border border-gold;
-			@apply scrollbar;
-		}
-		& .ui-menu-item.ui-state-disabled .ui-menu-item-wrapper {
-			@apply text-neutral-400;
-		}
-		& .ui-menu-item:not(.ui-state-disabled) .ui-menu-item-wrapper:hover, .dropdown-menu .ui-menu-item:not(.ui-state-disabled) .ui-state-active {
-			@apply text-gold;
-		}
-	}
-	.dropdown-menu{
-		@apply opacity-0 pointer-events-none transition z-20 top-0;
-		ul{
-			@apply -translate-y-5 transition  relative;
-			.ui-menu-item div{
-				@apply p-3 relative overflow-hidden cursor-pointer transition;
-			}
-		}
-		&.ui-selectmenu-open{
-			@apply w-auto pt-2 pointer-events-auto opacity-100 translate-y-0;
-			ul{
-				@apply translate-y-0;
-			}
-		}
-	}
-	.form-input{
-		@apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 md:py-[10px] md:text-[12px];
-		@apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
-		@apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
-		@apply group-has-[:invalid]/input:outline-red-500 group-has-[:invalid]/input:outline-1 group-has-[:invalid]/input:outline ;
-		@apply group-[&.hide-errors]/form:outline-none;
-	}
-	.status-dot{
-		@apply w-[5px] h-[5px] rounded-full bg-current relative before:absolute before:inset-0 before:rounded-full before:border before:border-current;
-		&.ping-once{
-			@apply before:animate-ping-lg-once;	
-		}
-		&.ping{
-			@apply before:animate-ping-lg;	
-		}
+    &::-webkit-scrollbar-thumb {
+      background-color: #D3B096;
+      background-clip: padding-box;
+      border: 2px solid #fff;
+      border-radius: 3px;
+    }
+  }
 
-	}
+  .breadcrumbs {
+    & > div {
+      & > span {
+        @apply flex gap-2 py-[60px] md:pt-[30px] md:pb-[30px] md:text-[12px] font-medium;
+        & > span {
+          @apply after:w-1 after:h-1 after:rounded-full after:bg-gold after:inline-block flex items-center gap-2 last:after:hidden;
+          @apply last:text-gold;
+          a {
+            @apply hover:text-gold transition
+          }
+        }
+      }
+    }
+  }
+
+  .wpcf7 {
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+    &.contact-form{
+      .row{
+        @apply md:flex-col;
+      }
+    }
+
+    .row {
+      @apply flex;
+      .full {
+        @apply basis-full;
+      }
+
+      .one-half {
+        @apply basis-1/2;
+      }
+    }
+
+    .field {
+      @apply p-1 relative has-[.wpcf7-not-valid-tip]:mb-6;
+      label {
+        @apply absolute text-red-500 left-2 top-0 bottom-0 flex justify-center items-center;
+      }
+
+      &:has([aria-invalid=true]) {
+        .wpcf7-not-valid-tip {
+          @apply block;
+        }
+      }
+    }
+
+    .wpcf7-not-valid-tip {
+      @apply hidden absolute w-full top-full left-0 text-left text-sm;
+
+
+    }
+
+    .form-control {
+      @apply form-input;
+      @apply w-full rounded-full #{!important};
+      // important to override plugin styles
+    }
+
+    a {
+      @apply underline text-gold;
+    }
+
+    .btn {
+      @apply w-full mb-1;
+      @apply rounded-full #{!important};
+    }
+  }
+
+  // .scrollbar-x-xs{
+  // 	&::-webkit-scrollbar {
+  // 		height: 3px;
+  // 	}
+  // 	/* Track */
+  // 	&::-webkit-scrollbar-track {
+  // 		background-color: #ddd;
+  // 	}
+  // 	/* Handle */
+  // 	&::-webkit-scrollbar-thumb {
+  // 		background-color: #888;
+  // 		border-radius: 3px;
+  // 	}
+  // 	/* Handle on hover */
+  // 	&::-webkit-scrollbar-thumb:hover {
+  // 		cursor: pointer;
+  // 		/*redifine styles like background and border radius*/
+  // 	}
+  // }
+  // .scrollbar-y-xs{
+  // 	&::-webkit-scrollbar {
+  // 		height: 3px;
+  // 	}
+  // 	/* Track */
+  // 	&::-webkit-scrollbar-track {
+  // 		background-color: #ddd;
+  // 	}
+  // 	/* Handle */
+  // 	&::-webkit-scrollbar-thumb {
+  // 		background-color: #888;
+  // 		border-radius: 3px;
+  // 	}
+  // 	/* Handle on hover */
+  // 	&::-webkit-scrollbar-thumb:hover {
+  // 		cursor: pointer;
+  // 		/*redifine styles like background and border radius*/
+  // 	}
+  // }
+  h1.title {
+    @apply text-gold font-roman text-[42px] md:text-[20px] uppercase;
+  }
+
+  h2.title {
+    @apply text-gold font-roman text-4xl md:text-lg uppercase;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden;
+    @apply flex flex-col;
+    figure {
+      @apply flex items-center justify-center;
+      @apply min-w-0 min-h-0;
+      img {
+        @apply w-full h-full object-cover object-center;
+      }
+    }
+  }
+
+  .card-body {
+    @apply p-8 md:p-5;
+  }
+
+  .card-wide {
+    .card-body {
+      @apply p-12 md:p-5;
+    }
+  }
+
+  .card-compact {
+    .card-body {
+      @apply p-4 md:p-4;
+    }
+  }
+
+  .card-compact-xs {
+    .card-body {
+      @apply p-2 md:p-2;
+    }
+  }
+
+  .card-side {
+    @apply flex-row;
+  }
+
+
+  .btn {
+    @apply p-4 rounded-full border-[1.45px] border-gold text-center font-roman text-xl font-bold;
+    @apply md:p-2 md:text-lg;
+    @apply hover:[&:not(:disabled)]:bg-gold hover:[&:not(:disabled)]:text-white transition cursor-pointer;
+    @apply active:shadow-inner-md;
+    @apply disabled:opacity-80 disabled:bg-gray-200 disabled:border-gray-400;
+  }
+
+  .dropdown-radio-menu {
+    ul {
+      @apply max-h-[300px] overflow-y-auto;
+    }
+
+    ul .ui-menu-item div {
+      @apply relative;
+      padding-left: 40px !important;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 22px;
+        height: 22px;
+        @apply border border-gold rounded-full bg-white;
+      }
+
+      &:after {
+        content: '';
+        @apply z-10 absolute;
+
+        left: calc(10px + (22px - 6px) / 2);
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @apply bg-gold transition h-1.5 w-1.5 rounded-full scale-0;
+      }
+
+      &.ui-state-active:after {
+        @apply scale-100;
+      }
+    }
+
+    ul:before {
+      content: '';
+      width: 1px;
+      position: absolute;
+      height: 100%;
+      background: #D3B096;
+      padding: 25px 0;
+      left: calc(20px);
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+      background-clip: content-box;
+    }
+  }
+
+  .dropdown-menu-gold {
+    ul {
+      @apply bg-white rounded-lg shadow-lg border border-gold;
+      @apply scrollbar;
+    }
+
+    & .ui-menu-item.ui-state-disabled .ui-menu-item-wrapper {
+      @apply text-neutral-400;
+    }
+
+    & .ui-menu-item:not(.ui-state-disabled) .ui-menu-item-wrapper:hover, .dropdown-menu .ui-menu-item:not(.ui-state-disabled) .ui-state-active {
+      @apply text-gold;
+    }
+  }
+
+  .dropdown-menu {
+    @apply opacity-0 pointer-events-none transition z-20 top-0;
+    ul {
+      @apply -translate-y-5 transition  relative;
+      .ui-menu-item div {
+        @apply p-3 relative overflow-hidden cursor-pointer transition;
+      }
+    }
+
+    &.ui-selectmenu-open {
+      @apply w-auto pt-2 pointer-events-auto opacity-100 translate-y-0;
+      ul {
+        @apply translate-y-0;
+      }
+    }
+  }
+
+  .form-input {
+    @apply bg-white rounded-full border-2 border-neutral-200 text-stone-500 placeholder:opacity-90 p-5 md:py-[10px] md:text-[12px];
+    @apply focus:outline-transparent focus:ring-2 ring-gray-300 ring-offset-2 transition;
+    @apply invalid:outline-red-500 invalid:outline-1 invalid:outline;
+    @apply group-has-[:invalid]/input:outline-red-500 group-has-[:invalid]/input:outline-1 group-has-[:invalid]/input:outline ;
+    @apply group-[&.hide-errors]/form:outline-none;
+  }
+
+  .status-dot {
+    @apply w-[5px] h-[5px] rounded-full bg-current relative before:absolute before:inset-0 before:rounded-full before:border before:border-current;
+    &.ping-once {
+      @apply before:animate-ping-lg-once;
+    }
+
+    &.ping {
+      @apply before:animate-ping-lg;
+    }
+
+  }
 
 }
+
 // .banner-mask{
 // 	mask: url(../images/banner-mask.svg) exclude;
 // 	@media screen and (max-width:767px) {
@@ -338,6 +426,7 @@
   box-sizing: border-box;
   animation: l1 4s infinite linear;
 }
+
 .loader::before,
 .loader::after {
   content: "";
@@ -349,23 +438,29 @@
   box-sizing: content-box;
   animation: inherit;
 }
+
 .loader::after {
   width: 50%;
   aspect-ratio: 1;
   border: 2px solid;
   animation-duration: 2s;
 }
-@keyframes l1{
-  100% {transform:rotate(1turn)}
+
+@keyframes l1 {
+  100% {
+    transform: rotate(1turn)
+  }
 }
-.product-nav-slider{
-	.slick-track{
-		margin-left: 0;
-		margin-right: 0;
-	}
+
+.product-nav-slider {
+  .slick-track {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
+
 .text-adaptive {
-  font-size: calc((100vw - 600px)/(1600 - 600) * (var(--text-size-no-px) - var(--text-mobile-size-no-px)) + var(--text-mobile-size));
+  font-size: calc((100vw - 600px) / (1600 - 600) * (var(--text-size-no-px) - var(--text-mobile-size-no-px)) + var(--text-mobile-size));
   @media screen and (min-width: 1600px) {
     font-size: var(--text-size);
   }
