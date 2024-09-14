@@ -337,229 +337,37 @@
 	
 <!--</div>-->
 
-<section class="container mb-12">
-	<div class="pb-8 pt-0 md:pb-4">
-		<h1 class="title uppercase">
-		Оформление заказа
-		<img src="assets/img/right-decor.svg" alt="" class="inline-block h-[0.3em] mb-[0.2em] pl-2">
-		</h1>
+<div class="container my-3">
+	<div class="flex justify-center items-center gap-2 m-auto mb-10 md:mb-5">
+		<img src="assets/img/left-decor.svg" alt="" class="w-5">
+		<h2 class="title">Farm</h2>
+		<img src="assets/img/right-decor.svg" alt="" class="w-5">
+
 	</div>
-	<form class="flex justify-between items-start xl:flex-wrap gap-10 hide-errors group/form">
-		<div class="xl:static sticky top-[100px] grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full xl:order-2">
-			<div class="flex gap-6 cart-slider-payment mb-16">
-				<div class="px-2 py-4">
-					<div class="card card-compact bg-white shadow-lg rounded-2xl">
-						<div class="card-body flex items-center justify-between gap-8 md:gap-4">
-							<div class="flex justify-between items-center gap-6 grow sm:justify-around">
-								<div class="flex items-center md:basis-full">
-									<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
-										<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
-									</div>
-									<div class="text-xl md:text-xs font-roman font-bold ml-10 uppercase">
-										икра Чёрная классик
-									</div>
-								</div>
-								<div class="text-xl md:text-xs whitespace-nowrap">1 X</div>
-								<div class="text-3xl md:text-lg font-semibold whitespace-nowrap">30 €</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="px-2 py-4">
-					<div class="card card-compact bg-white shadow-lg rounded-2xl">
-						<div class="card-body flex items-center justify-between gap-8 md:gap-4">
-							<div class="flex justify-between items-center gap-6 grow sm:justify-around">
-								<div class="flex items-center md:basis-full">
-									<div class="aspect-square rounded-2xl basis-[90px] sm:basis-[60px] shrink-0 overflow-hidden">
-										<img src="assets/img/product.png" alt="" class="w-full h-full object-center object-cover">
-									</div>
-									<div class="text-xl md:text-xs font-roman font-bold ml-10 uppercase">
-										икра Чёрная классик
-									</div>
-								</div>
-								<div class="text-xl md:text-xs whitespace-nowrap">1 X</div>
-								<div class="text-3xl md:text-lg font-semibold whitespace-nowrap">30 €</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card bg-white xl:bg-transparent shadow-lg xl:shadow-none">
-				<div class="card-body xl:p-0">
-					<div class="mb-5 pb-7 border-b border-neutral-200 xl:border-none xl:pb-0  xl:pt-2">
-						<div class="flex items-center justify-between mb-5">
-							<div class="md:text-[12px]">Итого</div>
-							<div class="font-semibold text-[20px]">60 €</div>
-						</div>
-						<div class="flex items-center justify-between mb-5">
-							<div class="">Итого</div>
-							<div class="font-semibold">60 €</div>
-						</div>
-						<div class="flex items-center justify-between mb-5">
-							<div class="">Итого</div>
-							<div class="font-semibold">60 €</div>
-						</div>
-						
-					</div>
-					<!-- Desktop Button-->
-					<div class=" xl:hidden">
-						<div class="text-2xl flex items-center justify-between mb-12">
-							<div class="">Итого</div>
-							<div class="font-semibold">60 €</div>
-						</div>
-						<a href="" class="btn block uppercase">Подтвердить заказ</a>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- add class hide-errors -->
-		<div class="grow-0 basis-1/2 max-w-3xl xl:max-w-full xl:basis-full text-sm xl:order-1 xl:-mt-[200px] group/form "> 
-			<div class="xl:card xl:bg-white xl:shadow-lg">
-				<div class="xl:card-body">
-					
-					<div class="flex items-center mb-10 md:mb-3">
-						<div class="text-red-500 status-dot"></div>
-						<div class="ml-3 md:text-[12px]">
-							Поля обязательны для заполнения
-						</div>
-					</div>
-					<div class="pb-12 lg:pb-2 border-b border-neutral-200 mb-12 md:mb-0 md:pb-0">
-						<div class="text-gold text-2xl font-roman mb-3 md:font-regular md:text-[16px]">
-							Телефон для связи
-						</div>
-						<div class="mb-5 md:text-[12px] md:leading-normal">
-							(Укажите местный номер той страны, куда осуществляется доставка. Местные курьеры не всегда звонят на другие номера)
-						</div>
-					<div class="group/form-element">
-						<div class="relative w-full group/input">
-                            <div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-                                <div class="status-dot absolute text-red-500 group-[&:not(.hide-errors)]/form:group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
-                            </div>
-                            <input required type="text" placeholder="Телефон" class="w-full form-input">
-                        </div>
-						<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/form-element:invisible group-[&.hide-errors]/form:invisible">Ошибка</div>
-					</div>
-					</div>
-					<div class="delivery my-6">
-						<div class="delivery-types flex flex-col justify-between gap-4">
-							<span class="co-delivery_method-title"><?php echo get_field('no_delivery_text'); ?></span>
-						</div>
-					</div>
-
-					<div class="pb-12 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
-						<div class="text-gold text-2xl font-roman mb-7 md:font-regular md:text-[16px] md:mb-2">
-							Доставка
-						</div>
-						<div class="flex md:flex-wrap gap-5 mb-10 md:mb-0">
-							<div class="basis-1/2 md:basis-full">
-								<div class="group/form-element">
-									<div class="relative w-full group/input">
-										<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-											<div class="status-dot absolute text-red-500 group-[&:not(.hide-errors)]/form:group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
-										</div>
-										<select required name="Country" class="w-full form-input flex flex-row-reverse justify-between items-center" data-dropdown data-dropdown-class="dropdown-menu dropdown-menu-gold dropdown-radio-menu font-bold">
-											<option value="" selected disabled>Страна</option>
-											<option value="es" >Испания</option>
-											<option value="fr" >Франция</option>
-										</select>
-									</div>
-									<div class="text-red-400 text-xs mt-2 group-[&:not(:has(:invalid))]/form-element:hidden group-[&.hide-errors]/form:hidden">Ошибка</div>
-								</div>
-							</div>
-							<div class="basis-1/2 md:basis-full">
-								<div class="relative w-full group/input">
-									<div class="absolute pointer-events-none h-full flex justify-center items-center left-3 top-0 group-[&:not(:has(:required))]/input:hidden">
-										<div class="status-dot absolute text-red-500 group-[&:not(.hide-errors)]/form:group-has-[:invalid]/input:ping group-has-[:valid]/input:text-green-500"></div>
-									</div>
-									<input required type="text" placeholder="Телефон" class="w-full form-input">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pb-6 border-b border-neutral-200 mb-12 md:mb-6 md:pb-6">
-						<div class="text-gold text-2xl font-roman mb-7 md:font-regular md:text-[16px] md:mb-2">
-							Доставка
-						</div>
-						<div class="flex justify-around"></div>
-						<div class="">
-							<div class="flex flex-col justify-between gap-4">
-								<label class="flex items-center gap-4 cursor-pointer group/radio">
-									<span class="flex items-center">
-										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-										
-									</span>
-									<span class="flex flex-col gap-0 grow">
-										<span class="font-medium text-lg md:text-[12px] md:font-medium leading-normal">Через PayPal</span>
-										<span class="text-sm  md:text-[12px] md:font-normal leading-normal">Удобная система оплвты</span>
-									</span>
-									<span class="text-[24px] md:text-[20px] font-semibold leading-normal">+3%
-									</span>
-								</label>
-								<label class="flex items-center gap-4 cursor-pointer group/radio">
-									<span class="flex items-center">
-										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-										
-									</span>
-									<span class="flex flex-col gap-0 grow">
-										<span class="font-medium text-lg md:text-[12px] md:font-medium leading-normal">Через PayPal</span>
-										<span class="text-sm  md:text-[12px] md:font-normal leading-normal">Удобная система оплвты</span>
-									</span>
-									<span class="text-[24px] md:text-[20px] font-semibold leading-normal">+3%
-									</span>
-								</label>
-								<label class="flex items-center gap-4 cursor-pointer group/radio">
-									<span class="flex items-center">
-										<input type="radio" name="weight-desktop" checked="checked" class="w-0 h-0 opacity-0 peer">
-										<span class="inline-block w-4 h-4 border border-gold rounded-full relative before:bg-gold before:rounded-full before:absolute before:inset-0.5 before:scale-0 before:peer-checked:scale-100 before:transition before:ease-out-wobble bg-white"></span>
-										
-									</span>
-									<span class="flex flex-col gap-0 grow">
-										<span class="font-medium text-lg md:text-[12px] md:font-medium leading-normal">Через PayPal</span>
-										<span class="text-sm  md:text-[12px] md:font-normal leading-normal">Удобная система оплвты</span>
-									</span>
-								</label>
-								
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</form>
-
-</section>
-<div class="hidden xl:block shadow-lg bg-white w-full h-auto xl:sticky z-10 bottom-0">
-	<div class="card-body flex flex-col justify-between h-full">
-		<div class="text-2xl flex items-center justify-between">
-			<a href="" class="btn py-[15px] px-[20px] uppercase text-xs">Подтвердить заказ</a>
-			<div class="text-sm ">Итого:</div>
-			<div class="font-semibold text-[30px]">60 €</div>
-		</div>
-		
-		
+	<div class="border border-gold p-2 sm:p-1 basis-2/3 grow-0 rounded-2xl md:basis-full  m-auto">
+		<img src="assets/img/banner.png" alt=""
+		     class="w-full max-w-full sm:p-2 rounded-2xl text-center overflow-hidden">
+	</div>
+	<div class="mb-20 mt-10">
+		In the winter of 2014, our team got an announcement, in the newspaper "From hand to hand." In the vicinity of
+		Sarrion Township, an old trout farm was leased. At that time, it was empty for almost 15 years.
+		<br>
+		rout Farm required radical reconstruction.
+		<br>
+		e improved the hydrostations by launching two electric turbines, conducted two warm water pipelines and two water
+		pumps, installed a water treatment system, built a protection system, oxygen stations, freezers, created a
+		vegetation workshop, preparatory and packaging workshops, finished product warehouses, as well as the wintering zone
+		with water that cools to +3 degrees.
+		<br>
+		s a result, conditions were created that imitate the natural in natural habitats as much as possible. Temperature
+		regime, changeability of seasons (spring, summer, autumn, winter), flow rates corresponding to river flow rates in
+		nature and long wintering at lower temperatures.
+		<br>
+		<br>
+		n such a way, the Esturion de Sarrion farm became the first (and, so far, the only one) throughout Europe, growing
+		sturgeon in running water in ideal natural conditions.
 	</div>
 </div>
-
-
-		<!-- Mobile button -->
-	<!-- 	<div class="hidden xl:block shadow-lg bg-white w-full card h-[200px] xl:sticky z-10 top-[calc(100vh_-_220px)]">
-			<div class="card-body flex flex-col justify-between h-full">
-				<div class="text-2xl flex items-center justify-between">
-					<div class="">Итого</div>
-					<div class="font-semibold">60 €</div>
-				</div>
-				<a href="" class="btn block uppercase">Подтвердить заказ</a>
-				
-			</div>
-		</div> -->
-
-
 <footer class="border-t-2 border-gold relative">
 	
 	<div class="bg-[#1c3251] text-white pt-8">
