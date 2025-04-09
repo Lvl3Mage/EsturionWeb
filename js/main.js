@@ -2,6 +2,18 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/assets/scss/main.scss":
+/*!***********************************!*\
+  !*** ./src/assets/scss/main.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -659,18 +671,6 @@ function EnableSliderFiltering(sliderSelector, selector) {
 function DisableSliderFiltering(sliderSelector) {
   $(sliderSelector).slick('slickUnfilter');
 }
-
-/***/ }),
-
-/***/ "./src/assets/scss/main.scss":
-/*!***********************************!*\
-  !*** ./src/assets/scss/main.scss ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 
 /***/ })
 
