@@ -1248,15 +1248,15 @@ p{
   margin-bottom: 1.5rem;
 }
 .wpcf7 .field label{
-  position: absolute;
-  left: 0.5rem;
-  top: 0px;
-  bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  position: absolute !important;
+  left: 0.5rem !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 68 68 / var(--tw-text-opacity)) !important;
 }
 .wpcf7 .field[\:has\(\[aria-invalid\%3Dtrue\]\)] .wpcf7-not-valid-tip{
   display: block;
