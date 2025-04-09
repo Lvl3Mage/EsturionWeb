@@ -1252,6 +1252,7 @@ p{
   left: 0.5rem !important;
   top: 0px !important;
   bottom: 0px !important;
+  z-index: 10 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
