@@ -170,7 +170,7 @@
     .field {
       @apply p-1 relative has-[.wpcf7-not-valid-tip]:mb-6;
       label {
-        @apply absolute text-red-500 left-2 top-0 bottom-0 flex justify-center items-center;
+        @apply absolute text-red-500 left-2 top-0 bottom-0 flex justify-center items-center z-10 #{!important};
       }
 
       &:has([aria-invalid=true]) {
