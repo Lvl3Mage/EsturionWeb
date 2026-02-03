@@ -1,5 +1,5 @@
-# Tailwind webpack preset
-A tailwind webpack preset used to quickly set up a tailwind dev environment from a template
+# A multipage website for a caviar marketplace / farm
+
 
 Development Server
 ```
